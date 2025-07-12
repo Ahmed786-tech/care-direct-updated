@@ -38,11 +38,13 @@ export default function Faqs({
           >
             {descriptionText}
           </p>
+          {/* <div className="border-3 border-[#03A9F4]"> */}
           <img
             src={image}
             alt="FAQ Section"
-            className="rounded-[15px] sm:rounded-[18px] md:rounded-[20px] shadow-md w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[588.84px] object-cover mt-[20px] sm:mt-[25px] md:mt-[30px] border-3 border-[#03A9F4]"
+            className="rounded-[15px] sm:rounded-[18px] md:rounded-[20px] shadow-md w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[588.84px]  mt-[20px] sm:mt-[25px] md:mt-[30px] "
           />
+          {/* </div> */}
         </div>
 
         {/* Right Side - FAQ Accordion */}

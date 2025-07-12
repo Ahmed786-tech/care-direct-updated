@@ -61,7 +61,7 @@ export default function page() {
                   Senior Carer
                 </h3>
                 <p
-                  className={`${figtree.className} text-[#7A7878] text-[16px] flex items-center gap-2`}
+                  className={`${figtree.className} text-[#7A7878] font-bold text-[16px] flex items-center gap-2`}
                 >
                   <span className="font-semibold">Reports to:</span>{" "}
                   <span className="text-[16px] font-500 text-[#7A7878]">
@@ -281,7 +281,7 @@ export default function page() {
                   <a
                     href="#"
                     className="rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors"
-                    // className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-blue-200 transition-colors"
+                  // className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-blue-200 transition-colors"
                   >
                     <i class="fa-brands fa-x-twitter text-[#03a9f4] text-3xl"></i>
                   </a>
@@ -331,8 +331,8 @@ export default function page() {
                 <p
                   className={`${figtree.className} text-[#7A7878] text-[16px] flex items-center gap-2`}
                 >
-                  <span className="font-semibold">Reports to:</span>{" "}
-                  <span className="text-[16px] font-500 text-[#084B92]">
+                  <span className="font-bold">Reports to:</span>{" "}
+                  <span className="text-[16px] font-normal text-[#7A7878]">
                     Senior Carer / Care Coordinator
                   </span>
                 </p>
@@ -548,7 +548,7 @@ export default function page() {
                   <a
                     href="#"
                     className="rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors"
-                    // className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-blue-200 transition-colors"
+                  // className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-blue-200 transition-colors"
                   >
                     <i class="fa-brands fa-x-twitter text-[#03a9f4] text-3xl"></i>
                   </a>

@@ -38,12 +38,12 @@ export default function Homepage() {
       formattedTitle: "Featured",
       title: " Roles",
       description:
-        "If you are seeking a career where your work matters, your voice is valued, and your skills are nurtured, Care Direct is the place to grow.",
+        "Seeking a career where your work matters? Care Direct is the place to grow.",
       link: "View Job",
     },
     { title: "Registered Nurses", link: "View Job" },
     { title: "Care Workers", link: "Careers" },
-    { title: "Join Our Team", link: "Careers" },
+    { title: "Download Brochure", link: "Careers" },
   ];
 
   const cardData = [
@@ -271,7 +271,7 @@ export default function Homepage() {
                   As a care provider recruitment agency, our success comes from
                   the heartfelt connections we build with our incredible members
                   of staff. If you’re thinking about joining our family, here
-                  are six wonderful reasons to Join us.
+                  are seven wonderful reasons to Join us.
                 </p>
                 <div className="mt-8 sm:mt-10 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
                   {[
@@ -411,9 +411,9 @@ export default function Homepage() {
                   title: "How to Choose Home Care that Feels Like Family",
                   description:
                     "Finding the right home care is crucial for your loved one's wellbeing. Learn how to evaluate care providers, understand different care options, and ensure your family member receives compassionate, professional support in the comfort of their home.",
-                  profile: "/Images/Profile-img1.png",
-                  author: "Joanna Wellick",
-                  date: "June 28, 2018",
+                  // profile: "/Images/Profile-img1.png",
+                  // author: "Joanna Wellick",
+                  // date: "June 28, 2018",
                   tags: ["Aenean Eleifend", "Aliquam"],
                 },
                 {
@@ -421,9 +421,9 @@ export default function Homepage() {
                   title: "Why Compassionate Care Is Our Core Value",
                   description:
                     "At Care Direct, compassion isn't just a buzzword - it's the foundation of everything we do. Discover how our commitment to empathetic care creates better outcomes for clients and their families, while maintaining the highest standards of professional service.",
-                  profile: "/Images/Profile-img1.png",
-                  author: "Joanna Wellick",
-                  date: "June 28, 2018",
+                  // profile: "/Images/Profile-img1.png",
+                  // author: "Joanna Wellick",
+                  // date: "June 28, 2018",
                   tags: ["Aenean Eleifend"],
                 },
                 {
@@ -431,9 +431,9 @@ export default function Homepage() {
                   title: "A Day in the Life of a Caregiver at Care Direct",
                   description:
                     "Experience what it means to be a professional caregiver at Care Direct. From morning routines to evening check-ins, learn about the rewarding moments and challenges that make caregiving such a meaningful career choice. We are committed to providing the best care.",
-                  profile: "/Images/Profile-img1.png",
-                  author: "Joanna Wellick",
-                  date: "June 28, 2018",
+                  // profile: "/Images/Profile-img1.png",
+                  // author: "Joanna Wellick",
+                  // date: "June 28, 2018",
                   tags: ["Aenean Eleifend", "Aliquam"],
                 },
               ].map((blog, index) => (
@@ -474,17 +474,17 @@ export default function Homepage() {
                     </p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <Image
+                        {/* <Image
                           src={blog.profile}
                           alt={blog.author}
                           width={100}
                           height={100}
                           className="w-10 h-10"
                         />
-                        <p className="font-normal">{blog.author}</p>
+                        <p className="font-normal">{blog.author}</p> */}
                       </div>
-                      <div className="w-10 h-px border-t border-[#6C757D66]"></div>
-                      <p className="text-[#6C757D]">{blog.date}</p>
+                      {/* <div className="w-10 h-px border-t border-[#6C757D66]"></div> */}
+                      {/* <p className="text-[#6C757D]">{blog.date}</p> */}
                     </div>
                     <a
                       href="#"

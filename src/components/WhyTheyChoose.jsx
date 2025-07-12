@@ -67,7 +67,7 @@ export default function WhyTheyChoose({
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+        <div className="w-full lg:w-1/2 mt-8 xl:mt-40">
           <Image
             src={image}
             alt="Caregiver with elderly"

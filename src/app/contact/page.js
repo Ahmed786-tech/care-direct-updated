@@ -142,13 +142,11 @@ export default function page() {
               <button
                 type="submit"
                 disabled={!verified}
-                className={`w-full py-3 sm:py-4 rounded-full transition duration-300 flex items-center justify-center ${
-                  poppins.className
-                } text-white font-500 text-[16px] sm:text-[18px] md:text-[20px] bg-[#084B92] hover:bg-[#083B91] ${
-                  !verified
+                className={`w-full py-3 sm:py-4 rounded-full transition duration-300 flex items-center justify-center ${poppins.className
+                  } text-white font-500 text-[16px] sm:text-[18px] md:text-[20px] bg-[#084B92] hover:bg-[#083B91] ${!verified
                     ? "opacity-50 cursor-not-allowed"
                     : "opacity-100 cursor-pointer"
-                }`}
+                  }`}
               >
                 Contact Us
                 <span

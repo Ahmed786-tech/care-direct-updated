@@ -177,7 +177,7 @@ export default function Footer() {
                       href="/residential"
                       className="hover:text-white hover:underline"
                     >
-                      Residential Living
+                      Residential Support
                     </Link>
                   </li>
                   <li>
@@ -247,7 +247,7 @@ export default function Footer() {
                       alt="Location"
                       className="w-4 h-4 mr-2"
                     />
-                    39a London Hastings Rd, Saint Leonards-on-sea TN37 6PA
+                    389a London Rd, St. Leonards-on-Sea TN37 6PA
                   </div>
                 </li>
               </ul>

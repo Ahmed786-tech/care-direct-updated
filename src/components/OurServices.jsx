@@ -97,7 +97,7 @@ const OurServices = () => {
       link: "/assisted",
     },
     {
-      title: "Residential Care",
+      title: "Residential Care Support",
       description:
         "Round-the-clock support in CQC-regulated care environments. Our professionals deliver care with compassion and clinical precision.",
       image: "/Images/Card-img2.png",

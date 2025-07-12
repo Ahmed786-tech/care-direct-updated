@@ -63,10 +63,10 @@ export default function page() {
                   RGN and RMN Nurses
                 </h3>
                 <p
-                  className={`${figtree.className} text-[#7A7878] text-[16px] flex items-center gap-2`}
+                  className={`${figtree.className} font-bold text-[#7A7878] text-[16px] flex items-center gap-2`}
                 >
                   Reports to:{" "}
-                  <span className="text-[16px] font-500 text-[#084B92]">
+                  <span className="text-[16px] font-normal text-[#7A7878]">
                     Care Home Manager
                   </span>
                 </p>
@@ -144,10 +144,10 @@ export default function page() {
                   Senior Care Worker
                 </h3>
                 <p
-                  className={`${figtree.className} text-[#7A7878] text-[16px] flex items-center gap-2`}
+                  className={`${figtree.className} text-[#7A7878] font-bold text-[16px] flex items-center gap-2`}
                 >
                   Reports to:{" "}
-                  <span className="text-[16px] font-500 text-[#084B92]">
+                  <span className="text-[16px] font-normal text-[#7A7878]">
                     Care Manager
                   </span>
                 </p>
@@ -225,10 +225,10 @@ export default function page() {
                   Community Care Worker
                 </h3>
                 <p
-                  className={`${figtree.className} text-[#7A7878] text-[16px] flex items-center gap-2`}
+                  className={`${figtree.className} text-[#7A7878] font-bold text-[16px] flex items-center gap-2`}
                 >
                   Reports to:{" "}
-                  <span className="text-[16px] font-500 text-[#084B92]">
+                  <span className="text-[16px] font-normal text-[#7A7878]">
                     Community Care Coordinator
                   </span>
                 </p>
@@ -306,10 +306,10 @@ export default function page() {
                   Support Worker
                 </h3>
                 <p
-                  className={`${figtree.className} text-[#7A7878] text-[16px] flex items-center gap-2`}
+                  className={`${figtree.className} text-[#7A7878] text-[16px] font-bold flex items-center gap-2`}
                 >
                   Reports to:{" "}
-                  <span className="text-[16px] font-500 text-[#084B92]">
+                  <span className="text-[16px] font-normal text-[#7A7878]">
                     Support Worker Coordinator
                   </span>
                 </p>
@@ -387,10 +387,10 @@ export default function page() {
                   Care Worker
                 </h3>
                 <p
-                  className={`${figtree.className} text-[#7A7878] text-[16px] flex items-center gap-2`}
+                  className={`${figtree.className} text-[#7A7878] text-[16px] font-bold flex items-center gap-2`}
                 >
                   Reports to:{" "}
-                  <span className="text-[16px] font-500 text-[#084B92]">
+                  <span className="text-[16px] font-normal text-[#7A7878]">
                     Support Care Coordinator
                   </span>
                 </p>
@@ -474,69 +474,71 @@ export default function page() {
         description2="You'll be matched to meaningful work that suits your experience, location, and goals — always with clear communication, real support, and fair pay."
         isAboutUsPage={false}
       />
-      <section className="container mx-auto bg-white py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8">
-        {/* Image at the top */}
-        <Badge text="Vacancies" iconSrc="/Images/Assisted-li.svg" />
+      <section className="bg-[#084B9205] " >
+        <div className="container mx-auto  py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8">
+          {/* Image at the top */}
+          <Badge text="Vacancies" iconSrc="/Images/Assisted-li.svg" />
 
-        {/* Heading and button inline */}
-        <div className="flex flex-col sm:flex-row justify-between bg-[white] items-start sm:items-center gap-4 sm:gap-0 mb-4 sm:mb-6">
-          <h2
-            className={`${ibmPlexSans.className} text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-gray-800`}
-          >
-            New Job <span className="text-[#03A9F4]">Openings</span>
-            <span className="text-[#03A9F4] text-[20px] ml-2">
-              (no under 18s)
-            </span>
-          </h2>
-          <Link href="/jobs">
-            <button
-              className={`${heebo.className} bg-[#084B92] text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-500  h-[50px] sm:h-[58px] md:h-[66px] px-4 sm:px-5 md:px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#084B91] transition`}
+          {/* Heading and button inline */}
+          <div className="flex flex-col sm:flex-row justify-between bg-[#084B9205] items-start sm:items-center gap-4 sm:gap-0 mb-4 sm:mb-6">
+            <h2
+              className={`${ibmPlexSans.className} text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-gray-800 `}
             >
-              <span>Apply Now</span>
-              <span
-                className="flex items-center justify-center bg-white rounded-full"
-                style={{ width: "28px", height: "28px", padding: "6px" }}
-              >
-                <ArrowRight className="text-[#084B92] w-4 h-4 sm:w-[18px] sm:h-[18px] md:w-5 md:h-5" />
+              New Job <span className="text-[#03A9F4]">Openings</span>
+              <span className="text-[#03A9F4] text-[20px] ml-2">
+                (no under 18s)
               </span>
-            </button>
-          </Link>
-        </div>
-
-        {/* Job list */}
-        <div className="space-y-4">
-          {jobOpenings.map((job, index) => (
-            <div key={index}>
-              <div
-                className="border border-[#03A9F4] rounded-[15px] sm:rounded-[18px] md:rounded-[20px] h-[80px] sm:h-[90px] md:h-[100.46px] px-3 sm:px-4 py-2 sm:py-3 flex justify-between items-center hover:bg-blue-50 transition cursor-pointer"
-                onClick={() =>
-                  setActiveIndex(activeIndex === index ? null : index)
-                }
+            </h2>
+            <Link href="/jobs">
+              <button
+                className={`${heebo.className} bg-[#084B92] text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-500  h-[50px] sm:h-[58px] md:h-[66px] px-4 sm:px-5 md:px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-[#084B91] transition`}
               >
+                <span>Apply Now</span>
                 <span
-                  className={`${andika.className} text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#084B92] pr-2`}
+                  className="flex items-center justify-center bg-white rounded-full"
+                  style={{ width: "28px", height: "28px", padding: "6px" }}
                 >
-                  {job.title}
+                  <ArrowRight className="text-[#084B92] w-4 h-4 sm:w-[18px] sm:h-[18px] md:w-5 md:h-5" />
                 </span>
-                {activeIndex === index ? (
-                  <Minus
-                    size={16}
-                    className="text-blue-600 transition sm:w-[18px] sm:h-[18px] md:w-5 md:h-5"
-                  />
-                ) : (
-                  <Plus
-                    size={16}
-                    className="text-blue-600 hover:translate-x-1 transition sm:w-[18px] sm:h-[18px] md:w-5 md:h-5"
-                  />
+              </button>
+            </Link>
+          </div>
+
+          {/* Job list */}
+          <div className="space-y-4">
+            {jobOpenings.map((job, index) => (
+              <div key={index}>
+                <div
+                  className="border border-[#03A9F4] rounded-[15px] sm:rounded-[18px] md:rounded-[20px] h-[80px] sm:h-[90px] md:h-[100.46px] px-3 sm:px-4 py-2 sm:py-3 flex justify-between items-center hover:bg-blue-50 transition cursor-pointer"
+                  onClick={() =>
+                    setActiveIndex(activeIndex === index ? null : index)
+                  }
+                >
+                  <span
+                    className={`${andika.className} text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-bold text-[#084B92] pr-2`}
+                  >
+                    {job.title}
+                  </span>
+                  {activeIndex === index ? (
+                    <Minus
+                      size={16}
+                      className="text-blue-600 transition sm:w-[18px] sm:h-[18px] md:w-5 md:h-5"
+                    />
+                  ) : (
+                    <Plus
+                      size={16}
+                      className="text-blue-600 hover:translate-x-1 transition sm:w-[18px] sm:h-[18px] md:w-5 md:h-5"
+                    />
+                  )}
+                </div>
+
+                {/* Dropdown content */}
+                {activeIndex === index && job.details && (
+                  <div className="pt-2 sm:pt-3">{job.details}</div>
                 )}
               </div>
-
-              {/* Dropdown content */}
-              {activeIndex === index && job.details && (
-                <div className="pt-2 sm:pt-3">{job.details}</div>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
       <section className="container mx-auto bg-white py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8">
@@ -630,7 +632,7 @@ export default function page() {
             Contact <span className="text-[#03A9F4]">Us</span>
           </h2>
           <p
-            className={`${poppins.className} text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] font-300 text-[#888888] max-w-[100%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%]`}
+            className={`${poppins.className} text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] font-300 text-[#888888] `}
           >
             We're Here to Help — Always. Whether you're looking for care,
             building your team, or exploring a career with us — getting in touch
