@@ -188,7 +188,7 @@ export default function Homepage() {
 
         <div className=" absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
           <div
-            className="hidden md:block w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[846px] md:h-[846px]"
+            className=" w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[846px] md:h-[846px]"
             style={{
               backgroundImage: 'url("/images/Oval.png")',
               backgroundRepeat: "no-repeat",
