@@ -16,7 +16,7 @@ const ContactForm = () => {
     <section className="bg-[#084B9205] py-4 sm:py-6 md:py-8 mb-24 sm:mb-24 md:mb-30">
       <div className="container mx-auto px-2 sm:px-4 md:px-8">
         <div className="bg-gray-50 rounded-[10px] sm:rounded-[15px] md:rounded-[20px] overflow-hidden">
-          <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-8">
+          <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-8 py-8 md:py-16">
             {/* Left Side - Image */}
             <div className="w-full md:w-1/2">
               <Image
@@ -24,13 +24,18 @@ const ContactForm = () => {
                 alt="Person with phone"
                 width={550}
                 height={800}
-                className="w-full h-[300px] sm:h-[400px] md:h-[820px] object-cover rounded-[10px] sm:rounded-[15px] md:rounded-[20px]"
+                className="w-full object-cover "
               />
             </div>
 
             {/* Right Side - Form */}
             <div className="relative z-10 w-full md:w-1/2 bg-white border-[1px] sm:border-[1.5px] md:border-[2px] border-[#D4D0D0] p-4 sm:p-6 md:p-8 rounded-[10px] sm:rounded-[15px] md:rounded-[20px]">
-              <Badge text="Contact" iconSrc="/Images/Contact.svg" />
+              <Badge
+                badgeText="Contact"
+                badgeTextColor="#A8D5BA"
+                badgeColor="#A8D5BA26"
+                iconSrc="/Images/Contact.svg"
+              />
               <div className={`${ibmPlexSans.className}`}>
                 <h2 className="text-[28px] sm:text-[34px] md:text-[42px] font-bold text-[#084B92] mb-2 sm:mb-3 md:mb-4">
                   Get In <span className="text-[#03A9F4]">Touch</span>

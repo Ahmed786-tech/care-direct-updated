@@ -7,7 +7,7 @@ import Badge from "./Badge";
 const OurRecomendations = () => {
   const recommendations = [
     {
-      name: "Georgiana Adelina Viman",
+      name: "Georgiana Adelina Virlan",
       role: "CARE WORKER",
       description:
         "Amazing people and amazing team! Brilliant training and I've learned a lot with you guys! You the best!!",
@@ -18,7 +18,7 @@ const OurRecomendations = () => {
       rating: 5,
     },
     {
-      name: "Sunitha Shine",
+      name: "Sredha Shine",
       role: "SENIOR CARER",
       description:
         "Wonderful company! The staff is exceptional! I loved my experience with them!",
@@ -29,7 +29,7 @@ const OurRecomendations = () => {
       rating: 5,
     },
     {
-      name: "Juanita James",
+      name: "Juanita Jones",
       role: "REGISTERED NURSE",
       description:
         "I have now worked for Care Direct for nearly a year. Fantastic Job and wonderful Team to work with. ",
@@ -40,7 +40,7 @@ const OurRecomendations = () => {
       rating: 5,
     },
     {
-      name: "Carl Ford",
+      name: "Cat Ford",
       role: "CARE MANAGER",
       description:
         "A great place to work, all the staff are friendly and always happy to help. Highly recommend!!",
@@ -58,6 +58,8 @@ const OurRecomendations = () => {
         <Badge
           className=""
           text="Recommendations"
+          textColor="#A8D5BA"
+          badgeColor="#A8D5BA26"
           iconSrc="/Icons/Recommendations.svg"
           alt="Recommendations"
         />

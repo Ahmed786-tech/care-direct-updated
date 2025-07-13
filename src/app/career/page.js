@@ -451,6 +451,8 @@ export default function page() {
       <Navbar />
       <HeroSection
         badgeText="Trusted Care Solutions Since 2013"
+        badgeTextColor="#5AA678"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Care-solution.svg"
         NavyBlueHeading="Interested In A"
         subHeading="Career With Us?"
@@ -465,7 +467,8 @@ export default function page() {
 
       <AboutSection
         badgeText="Careers"
-        badgeIcon="/Images/Assisted-li.svg"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26" badgeIcon="/Images/Assisted-li.svg"
         NavyBlueHeading="Our"
         subHeading="Careers"
         image="/Images/Career-2.png"
@@ -477,7 +480,10 @@ export default function page() {
       <section className="bg-[#084B9205] " >
         <div className="container mx-auto  py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8">
           {/* Image at the top */}
-          <Badge text="Vacancies" iconSrc="/Images/Assisted-li.svg" />
+          <Badge
+            text="Vacancies"
+            textColor="#A8D5BA"
+            badgeColor="#A8D5BA26" iconSrc="/Images/Assisted-li.svg" />
 
           {/* Heading and button inline */}
           <div className="flex flex-col sm:flex-row justify-between bg-[#084B9205] items-start sm:items-center gap-4 sm:gap-0 mb-4 sm:mb-6">
@@ -546,7 +552,9 @@ export default function page() {
           {/* Left side: heading and benefits */}
           <div>
             {/* Icon above heading */}
-            <Badge text="Work With Us" iconSrc="/Images/About.svg" />
+            <Badge text="Work With Us"
+              textColor="#A8D5BA"
+              badgeColor="#A8D5BA26" iconSrc="/Images/About.svg" />
             {/* Heading */}
             <h2
               className={`${ibmPlexSans.className} text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-blue-900 mb-4 sm:mb-5 md:mb-6`}
@@ -587,7 +595,10 @@ export default function page() {
         </div>
       </section>
       <GettingStartedinServices
-        badgeText="Starting"
+
+        text="Starting"
+        textColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Starting.svg"
         buttonText="Contact Us"
         buttonLink="/contact"
@@ -625,7 +636,10 @@ export default function page() {
       <section className="container mx-auto flex flex-col items-center py-6 sm:py-8 md:py-10 lg:py-12 bg-white px-4 sm:px-6 lg:px-8">
         {/* Heading and Icon Section on Top */}
         <div className="flex flex-col items-start gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
-          <Badge text="Contact" iconSrc="/Images/Starting.svg" />
+          <Badge
+            text="Contact"
+            textColor="#A8D5BA"
+            badgeColor="#A8D5BA26" iconSrc="/Images/Starting.svg" />
           <h2
             className={`${ibmPlexSans.className} text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-[#004990]`}
           >

@@ -5,6 +5,8 @@ import Image from "next/image";
 import PrimaryButton from "./PrimaryButton";
 
 export default function GettingStartedinServices({
+  badgeTextColor,
+  badgeColor,
   badgeText,
   badgeIcon,
   buttonText,
@@ -21,7 +23,12 @@ export default function GettingStartedinServices({
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 gap-4">
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <Badge text={badgeText} iconSrc={badgeIcon} />
+              <Badge
+                text={badgeText}
+                textColor={badgeTextColor || "#000"}
+                badgeColor={badgeColor || "#000"}
+                iconSrc={badgeIcon}
+              />
             </div>
             <h2
               className={`${ibmPlexSans.className} text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-bold text-[#004990]`}

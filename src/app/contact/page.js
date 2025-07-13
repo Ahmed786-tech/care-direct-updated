@@ -39,6 +39,8 @@ export default function page() {
       <Navbar />
       <HeroSection
         badgeText="Trusted Care Solutions Since 2013"
+        badgeTextColor="#5AA678"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Care-solution.svg"
         NavyBlueHeading="Contact"
         subHeading="Us"
@@ -53,7 +55,10 @@ export default function page() {
           {/* Left Form Section */}
           <div className="lg:col-span-2 bg-white rounded-[20px] p-4 sm:p-6 md:p-8 shadow-md border-[2px] border-[#D4D0D0]">
             <div>
-              <Badge text="Contact" iconSrc="/Images/Assisted-li.svg" />
+              <Badge
+                text="Contact"
+                textColor="#A8D5BA"
+                badgeColor="#A8D5BA26" iconSrc="/Images/Assisted-li.svg" />
               <div className={`${ibmPlexSans.className}`}>
                 <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-[#084B92] mb-4">
                   Get In <span className="text-[#03A9F4]">Touch</span>

@@ -11,6 +11,7 @@ import OurTeam from "@/components/OurTeam";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import PrimaryButton from "@/components/PrimaryButton";
+import { color } from "framer-motion";
 
 export default function about() {
   const cardData = [
@@ -44,6 +45,8 @@ export default function about() {
       <Navbar />
       <HeroSection
         badgeText="Trusted Care Solutions Since 2013"
+        badgeTextColor="#5AA678"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Care-solution.svg"
         NavyBlueHeading="About"
         subHeading="Us"
@@ -57,6 +60,8 @@ export default function about() {
       />
       <AboutSection
         badgeText="About us"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/About.svg"
         NavyBlueHeading="About"
         image="/Images/Left-img7.png"
@@ -111,7 +116,9 @@ export default function about() {
           {/* Left Text Section */}
           <div className="w-full flex flex-col py-6 sm:py-8 lg:py-12 justify-center mt-4 sm:mt-5 lg:mt-7">
             <div className="flex items-center gap-2 py-1 rounded-full mb-3 sm:mb-4">
-              <Badge text="Choose us" iconSrc="/Images/Choose-us.svg" />
+              <Badge text="Choose us"
+                textColor="#A8D5BA"
+                badgeColor="#A8D5BA26" iconSrc="/Images/Choose-us.svg" />
             </div>
             <h1
               className={`${ibmPlexSans.className} text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold text-[#084B92] mb-2 leading-snug`}

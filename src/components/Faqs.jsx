@@ -7,6 +7,8 @@ import PrimaryButton from "./PrimaryButton";
 
 export default function Faqs({
   faqs,
+  badgeColor,
+  badgeTextColor,
   badgeText,
   badgeIcon,
   buttonText,
@@ -26,7 +28,13 @@ export default function Faqs({
       <div className="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-10 items-start">
         {/* Left Side - Text & Image */}
         <div className="flex-1 w-full md:w-1/2">
-          <Badge text={badgeText} iconSrc={badgeIcon} />
+          <Badge
+            text={badgeText}
+            textColor={badgeTextColor || "#000"}
+            badgeColor={badgeColor || "#000"}
+            iconSrc={badgeIcon}
+          />
+
           <h2
             className={`${ibmPlexSans.className} text-[24px] sm:text-[26px] md:text-[28px] lg:text-[30px] font-bold text-blue-900 mb-3 sm:mb-4`}
           >

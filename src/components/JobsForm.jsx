@@ -13,7 +13,7 @@ export default function JobsForm({ isJobsPage }) {
   };
 
   return (
-    <section className="container mx-auto flex flex-col items-center mb-24 sm:mb-24 md:mb-30 py-4 sm:py-6 md:py-8 bg-white">
+    <section className="container mx-auto flex flex-col items-center mb-40  md:mb-52 py-4 sm:py-6 md:py-8 bg-white px-8 ">
       {/* <section className="container mx-auto flex flex-col items-center mb-24 sm:mb-24 md:mb-30 py-4 sm:py-6 md:py-8 bg-white px-4 sm:px-6 md:px-8"> */}
       {/* Heading and Icon Section on Top */}
       {isJobsPage && (

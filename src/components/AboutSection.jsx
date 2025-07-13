@@ -4,6 +4,8 @@ import { ibmPlexSans, poppins } from "@/app/font";
 import Badge from "./Badge";
 
 const AboutSection = ({
+  badgeColor,
+  badgeTextColor,
   badgeText,
   badgeIcon,
   NavyBlueHeading,
@@ -31,7 +33,12 @@ const AboutSection = ({
       {/* Right Side - Text and Principles */}
       <div className="w-full lg:w-1/2 flex flex-col gap-2.5 mt-6 lg:mt-0">
         <div className="flex items-center gap-2">
-          <Badge text={badgeText} iconSrc={badgeIcon} />
+          <Badge
+            text={badgeText}
+            textColor={badgeTextColor || "#000"}
+            badgeColor={badgeColor || "#000"}
+            iconSrc={badgeIcon}
+          />
         </div>
 
         <h2

@@ -228,8 +228,7 @@ export default function Footer() {
                         alt="Email"
                         className="w-4 h-4 mr-2"
                       />
-                      info@caredirectrecruitment.co.uk{" "}
-                      <br className="hidden md:block" /> .co.uk
+                      info@caredirectrecruitment.co.uk
                     </div>
                   </li>
                 </Link>

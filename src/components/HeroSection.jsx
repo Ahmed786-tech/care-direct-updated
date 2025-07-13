@@ -9,6 +9,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const HeroSection = ({
+  badgeColor,
+  badgeTextColor,
   badgeText,
   badgeIcon,
   mainHeading,
@@ -50,7 +52,13 @@ const HeroSection = ({
               pathname !== "/privacy" ? "bg-[#ffffff]/[.85]" : ""
             }  rounded-[20px] flex flex-col px-3 sm:px-4 md:px-5 lg:px-7 h-[fit-content] py-6 sm:py-7 md:py-8 lg:py-10 justify-center md:items-start relative w-[fit-content]`}
           >
-            <Badge text={badgeText} iconSrc={badgeIcon} />
+            <Badge
+              text={badgeText}
+              textColor={badgeTextColor}
+              badgeColor={badgeColor}
+              iconSrc={badgeIcon}
+            />
+
             <div
               className={`${ibmPlexSans.className} ${
                 pathname !== "/" ? "-mt-8 md:-mt-14" : ""

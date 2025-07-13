@@ -81,7 +81,10 @@ export default function Homepage() {
       <Snowfall />
       <div className="">
         <HeroSection
+
           badgeText="12 years of trusted care solutions"
+          badgeTextColor="#5AA678"
+          badgeColor="#A8D5BA4D"
           badgeIcon="/Images/Care-solution.svg"
           mainHeading="Quality Care Starts With The Right People!"
           subHeading="That's Exactly What We Deliver."
@@ -277,7 +280,11 @@ export default function Homepage() {
           <div className="container mx-auto px-4 h-[1140px]">
             <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-12 lg:gap-16">
               <div className="w-full lg:w-1/2">
-                <Badge text="Work with us" iconSrc="/Images/Work-ba.svg" />
+
+                <Badge text="Work with us"
+                  textColor="#A8D5BA"
+                  badgeColor="#A8D5BA26"
+                  iconSrc="/Images/Work-ba.svg" />
                 <div className={`${ibmPlexSans.className} max-w-xl`}>
                   <h3 className="text-[28px] sm:text-[34px] md:text-[38px] lg:text-[42px] font-bold text-blue-900 mt-3">
                     7 Reasons To
@@ -413,7 +420,10 @@ export default function Homepage() {
             <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8">
               <div className="w-full">
                 <div>
-                  <Badge text="Blogs" iconSrc="/Images/Blogs.svg" />
+                  <Badge text="Blogs"
+                    textColor="#A8D5BA"
+                    badgeColor="#A8D5BA26"
+                    iconSrc="/Images/Blogs.svg" />
                   <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between gap-4 sm:gap-0">
                     <h3
                       className={`${ibmPlexSans.className} text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-blue-900 text-center sm:text-left`}

@@ -122,7 +122,12 @@ const OurServices = () => {
   return (
     <>
       <div className="relative z-10 mt-[670px] sm:mt-[300px] md:mt-[50px] lg:mt-0 px-4 md:px-6 lg:px-8">
-        <Badge text="Services" iconSrc="/Images/Services.svg" />
+        <Badge
+          text="Services"
+          textColor="#A8D5BA"
+          badgeColor="#A8D5BA26"
+          iconSrc="/Images/Services.svg"
+        />
         <SectionHeadingWithButton
           heading="Our"
           span="Services"

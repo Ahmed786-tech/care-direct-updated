@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-import Badge from "@/components/Badge";
 import Image from "next/image";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import React from "react";
@@ -168,9 +167,11 @@ export default function page() {
       <Navbar></Navbar>
       <HeroSection
         badgeText="Trusted Care Solutions Since 2013"
+        badgeTextColor="#7FB996"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Care-solution.svg"
-        NavyBlueHeading="Assisted"
-        subHeading="Living"
+        NavyBlueHeading="Domiciliary"
+        subHeading="Care"
         description="Support at Home, Delivered with Respect."
         primaryButtonText="Find a Caregiver"
         primaryButtonLink="/career"
@@ -181,6 +182,8 @@ export default function page() {
       />
       <AboutSection
         badgeText="Domiciliary Care"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Assisted-li.svg"
         NavyBlueHeading="What"
         subHeading="We Do"
@@ -194,6 +197,8 @@ export default function page() {
 
       <WhatWeProvideServices
         badgeText="Workers"
+        badgeTextColor="#FFFFFF"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Workers.svg"
         services={services}
         title="What We Provide"
@@ -217,6 +222,8 @@ export default function page() {
       </div>
       <WhyTheyChoose
         badgeText="Choose Us"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Care.svg"
         navyBlueHeading="Why Families Choose"
         subHeading="Care Direct"
@@ -226,6 +233,8 @@ export default function page() {
       />
       <GettingStartedinServices
         badgeText="Get Started"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Starting.svg"
         buttonText="Contact Us"
         buttonLink="/contact"
@@ -236,6 +245,8 @@ export default function page() {
       />
       <Faqs
         badgeText="FAQ's"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/sec.svg"
         buttonText="Subscribe"
         buttonLink="/contact"

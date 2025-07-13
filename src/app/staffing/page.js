@@ -135,6 +135,8 @@ export default function page() {
       <Navbar></Navbar>
       <HeroSection
         badgeText="Trusted Care Solutions Since 2013"
+        badgeTextColor="#5AA678"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Care-solution.svg"
         NavyBlueHeading="Staffing"
         subHeading="Solutions"
@@ -148,6 +150,8 @@ export default function page() {
       />
       <AboutSection
         badgeText="Staffing Solutions"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Residential.svg"
         NavyBlueHeading="What"
         subHeading="We Do"
@@ -159,6 +163,8 @@ export default function page() {
       />
       <WhatWeProvideServices
         badgeText="Workers"
+        badgeTextColor="#FFFFFF"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Workers.svg"
         services={services}
         title="What We Offer"
@@ -166,7 +172,11 @@ export default function page() {
         buttonLink="/contact"
       />
       <WhyTheyChoose
+
         badgeText="Care"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
+
         badgeIcon="/Images/Care.svg"
         navyBlueHeading="What Sets"
         subHeading="Us Apart"
@@ -204,7 +214,10 @@ export default function page() {
       />
 
       <GettingStartedinServices
+
         badgeText="Starting"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/Starting.svg"
         buttonText="Contact Us"
         buttonLink="/contact"
@@ -215,6 +228,8 @@ export default function page() {
       />
       <Faqs
         badgeText="FAQ's"
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeIcon="/Images/sec.svg"
         buttonText="Subscribe"
         buttonLink="/contact"

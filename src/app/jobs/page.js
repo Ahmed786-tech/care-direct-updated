@@ -570,6 +570,8 @@ export default function page() {
     <div className="bg-white">
       <Navbar />
       <HeroSection
+        badgeTextColor="#5AA678"
+        badgeColor="#A8D5BA26"
         badgeText="Trusted Care Solutions Since 2013"
         badgeIcon="/Images/Care-solution.svg"
         NavyBlueHeading="Interested In A"
@@ -585,10 +587,13 @@ export default function page() {
 
       <section className="container mx-auto py-6 sm:py-8 md:py-10 bg-white">
         {/* <section className="container mx-auto py-6 sm:py-8 md:py-10 bg-white px-4 sm:px-6 md:px-8"> */}
-        <div className="bg-white rounded-[15px] sm:rounded-[18px] md:rounded-[20px] shadow-lg mx-auto p-8">
+        <div className="bg-white rounded-[15px] sm:rounded-[18px] md:rounded-[20px] shadow-lg p-8 mx-8">
           {/* Badge at the top */}
           <div className="mb-3 sm:mb-4">
-            <Badge text="Contact" iconSrc="/Images/Contact.svg" />
+            <Badge
+              text="Contact"
+              textColor="#A8D5BA"
+              badgeColor="#A8D5BA26" iconSrc="/Images/Contact.svg" />
           </div>
 
           {/* Heading */}

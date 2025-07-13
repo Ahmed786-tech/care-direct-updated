@@ -13,6 +13,9 @@ export default function page() {
     <div className="bg-white">
       <Navbar></Navbar>
       <HeroSection
+
+        badgeTextColor="#A8D5BA"
+        badgeColor="#A8D5BA26"
         badgeText="Trusted Care Solutions Since 2013"
         badgeIcon="/Images/Care-solution.svg"
         NavyBlueHeading="Privacy"

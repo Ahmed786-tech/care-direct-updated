@@ -12,13 +12,20 @@ export default function WhyTheyChoose({
   subHeading,
   badgeText,
   badgeIcon,
+  badgeColor,
+  badgeTextColor,
   buttonText,
 }) {
   return (
     <section className="bg-white py-8 sm:py-12 md:py-14 lg:py-16">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10 relative z-10 ">
         <div className="w-full lg:w-1/2 xl:w-2/4">
-          <Badge text={badgeText} iconSrc={badgeIcon} />
+          <Badge
+            text={badgeText}
+            textColor={badgeTextColor || "#000"}
+            badgeColor={badgeColor || "#000"}
+            iconSrc={badgeIcon}
+          />
 
           <h3
             className={`${ibmPlexSans.className} text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#084B92] mt-3`}

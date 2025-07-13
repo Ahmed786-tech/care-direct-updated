@@ -52,7 +52,13 @@ const OurTeam = () => {
   return (
     <div className="relative bg-[#084B9205] py-8 mt-16 sm:py-10 md:py-12 poppins mb-20 sm:mb-24 md:mb-48">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <Badge text="Team" iconSrc="/Icons/team.svg" alt="Team" />
+        <Badge
+        text="Team"
+          textColor="#A8D5BA"
+          badgeColor="#A8D5BA26"
+          iconSrc="/Icons/team.svg"
+          alt="Team"
+        />
         <div className="flex flex-col md:flex-row justify-between justify-items-start mb-6 sm:mb-8 md:mb-10 gap-4 md:gap-0">
           <div className="flex flex-col w-full md:w-[50%]">
             <h2 className="text-[#084B92] text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-semibold">
