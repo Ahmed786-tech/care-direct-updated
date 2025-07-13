@@ -95,7 +95,8 @@ export default function Homepage() {
       </div>
 
       <div className="bg-white">
-        <section className="container mx-auto mt-[20px]">
+
+        <section className="container mx-auto mt-[20px]  ">
           <div className="container mx-auto px-4">
 
             <div className="relative from-lightBlue to-backgroundGray h-52 rounded-[80px] -mb-10 sm:py-72 md:py-52 lg:py-40 xl:py-28 ">
@@ -183,11 +184,25 @@ export default function Homepage() {
             <OurServices />
           </div>
         </section>
+        {/* Eclipse Image Container */}
 
-        <section className="container mx-auto bg-white py-8 sm:py-12 md:py-14 lg:py-16">
+        <div className="absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
+          <div
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[300px] md:h-[400px] "
+            style={{
+              backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              marginLeft: "-100px",
+            }}
+          />
+        </div>
+
+        <section className="container  mx-auto bg-white py-8 sm:py-12 md:py-14 lg:py-16">
           <div className="container mx-auto px-4">
             <div
-              className="bg-blue-900 rounded-[20px] sm:rounded-[25px] md:rounded-[30px] px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 text-white bg-center bg-cover"
+              className="bg-blue-900  rounded-[20px] sm:rounded-[25px] md:rounded-[30px] px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 text-white bg-center bg-cover relative z-10"
               style={{ backgroundImage: 'url("/Images/Background-3.png")' }}
             >
               <div className="text-center mb-6 sm:mb-8 md:mb-10">
@@ -369,10 +384,22 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-
+        <div className="absolute right-0  transform   -translate-y-3/5  pointer-events-none ">
+          <div
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[300px] md:h-[400px] opacity-100 z-0"
+            style={{
+              backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              marginRight: "-80px",
+              transform: "scaleX(-1)", // Pulls it slightly to the right edge
+            }}
+          />
+        </div>
         <section
           className={`${isMobile && "mt-[350px]"
-            } container mx-auto bg-[#084B920D] py-8 sm:py-12 md:py-16`}
+            } container mx-auto bg-[#084B920D] py-8 sm:py-12 md:py-16 relative z-10`}
         >
           <div className="container mx-auto px-4">
             <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8">
@@ -511,6 +538,19 @@ export default function Homepage() {
 
         <div className="container mx-auto px-4">
           <OurRecomendations />
+          <div className="absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
+            <div
+              className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[300px] md:h-[450px] opacity-100 z-0"
+              style={{
+                backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                marginRight: "-80px",
+                transform: "scaleX(-1)", // Pulls it slightly to the right edge
+              }}
+            />
+          </div>
           <ContactForm />
         </div>
         <Footer />
