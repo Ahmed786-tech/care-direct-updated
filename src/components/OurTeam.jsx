@@ -32,7 +32,7 @@ const OurTeam = () => {
       role: "On-Call Coordinator",
       description:
         "Iuliana Balcan has spent the past nine years making sure that support is always just a call away. As On-Call Coordinator, she plays a vital role in managing after-hours needs with calm efficiency and strong organisational skills.",
-      image: "/Images/Team/LulianaBalcan.jpg",
+      image: "/Images/Team/LulianaBalcan.png",
       email: "example@example.com",
       phone: "+40 72 322 76 70",
       linkedin: "#",
@@ -42,7 +42,7 @@ const OurTeam = () => {
       role: "Training Manager",
       description:
         "With over 40 years in health and social care, Ann brings extensive experience as a qualified adult education tutor and registered manager. She has contributed to key industry publications and holds postgraduate qualifications in education. Ann is passionate about training the next generation of care workers to ensure the highest standards of care delivery.",
-      image: "/Images/Team/TrainerAnnHolland.jpg",
+      image: "/Images/Team/TrainerAnnHolland.png",
       email: "example@example.com",
       phone: "+40 72 322 76 70",
       linkedin: "#",

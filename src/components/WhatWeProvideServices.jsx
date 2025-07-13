@@ -23,7 +23,7 @@ export default function WhatWeProvideServices({
         backgroundPosition: "center",
       }}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-10">
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 sm:mb-8 md:mb-10 gap-4 sm:gap-0">
           <div className="flex flex-col items-start gap-3 sm:gap-4">
@@ -65,21 +65,12 @@ export default function WhatWeProvideServices({
 
         {/* Slider */}
         <div className="px-[20px] sm:px-[30px] md:px-[40px]">
-          {" "}
-          {/* Added padding container for slider */}
           <Slider
-            // dots={true}
+            className=""
             infinite={true}
             speed={500}
             slidesToShow={4}
             slidesToScroll={1}
-            // appendDots={(dots) => (
-            //   <div>
-            //     <ul className="custom-dots flex justify-center gap-1.5 sm:gap-2 mt-3 sm:mt-4">
-            //       {dots}
-            //     </ul>
-            //   </div>
-            // )}
             customPaging={(i) => (
               <div className="dot w-[10px] h-[10px] sm:w-[12px] sm:h-[12px] md:w-[13px] md:h-[13px] rounded-full bg-[#5F8EBB] transition-all duration-300 mt-[35px] sm:mt-[40px] md:mt-[45px]" />
             )}
@@ -108,33 +99,33 @@ export default function WhatWeProvideServices({
             ]}
           >
             {services.map((service, index) => (
-              <div
-                key={index}
-                className="px-2 relative overflow-visible mt-[80px] sm:mt-[90px] md:mt-[100px]"
-              >
-                {/* Card */}
-                <div className="relative bg-white border border-[#A2CFFF] rounded-[15px] sm:rounded-[20px] pt-[70px] sm:pt-[80px] md:pt-[90px] px-3 sm:px-4 text-center shadow-md z-10 h-[180px] sm:h-[190px] md:h-[200px]">
-                  <h3
-                    className={`${poppins.className} text-[#084B92] font-bold text-[16px] sm:text-[18px] md:text-[20px] mt-2`}
-                  >
-                    {service.title}
-                  </h3>
-                  <p
-                    className={`${poppins.className} text-[#888888] text-[14px] sm:text-[15px] md:text-[16px] mt-1`}
-                  >
-                    {service.description}
-                  </p>
-                </div>
+              <div key={index} className="px-2 mt-[60px]  md:mt-[20px]">
+                {/* Single container with proper spacing */}
+                <div className="space-y-[-45px]  md:space-y-[-63px]">
+                  {/* Image */}
+                  <div className="flex justify-center z-20 relative">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      width={280}
+                      height={100.69}
+                      className="w-[240px] sm:w-[260px] md:w-[280px] h-auto"
+                    />
+                  </div>
 
-                {/* Floating Image */}
-                <div className="absolute top-[-70px] sm:top-[-80px] md:top-[-90px] left-1/2 transform -translate-x-1/2 w-[240px] sm:w-[260px] md:w-[280px] h-[142px] sm:h-[152px] md:h-[162.69px] rounded-[15px] sm:rounded-[20px] border-1 border-white shadow-lg z-20 overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={244.82}
-                    height={162.69}
-                    className="object-cover w-full h-full"
-                  />
+                  {/* Card */}
+                  <div className="relative bg-white border border-[#A2CFFF] rounded-[15px] sm:rounded-[20px] pt-[70px] sm:pt-[80px] md:pt-[90px] px-3 sm:px-4 text-center shadow-md h-[180px] sm:h-[190px] md:h-[200px] z-10">
+                    <h3
+                      className={`${poppins.className} text-[#084B92] font-bold text-[16px] sm:text-[18px] md:text-[20px] mt-2`}
+                    >
+                      {service.title}
+                    </h3>
+                    <p
+                      className={`${poppins.className} text-[#888888] text-[14px] sm:text-[15px] md:text-[16px] mt-1`}
+                    >
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
