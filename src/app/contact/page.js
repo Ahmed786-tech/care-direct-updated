@@ -239,7 +239,7 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto w-full bg-white mb-30 sm:mb-30 md:mb-40 px-4 sm:px-6 lg:px-8">
+      <section className="container mx-auto w-full bg-white mb-30 sm:mb-30 md:mb-40 px-4 sm:px-6 lg:px-8 pb-12 md:pb-20">
         <Image
           src="/Images/map.png"
           alt="Map"

@@ -557,7 +557,7 @@ export default function Homepage() {
             />
           </div>
         </div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 pb-12 md:pb-20">
           <OurRecomendations />
           <div className="hidden md:block absolute right-0 -top-28- transform -translate-y-1/5 z-0">
             <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative mr-[-150px]">

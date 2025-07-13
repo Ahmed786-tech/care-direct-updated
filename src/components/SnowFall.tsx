@@ -47,15 +47,21 @@ const FallingIcons: React.FC = () => {
           opacity: 0.5,
         },
         {
-          transform: `translate(${driftX * 0.25 + swayAmplitude}px, ${driftY * 0.25}px)`,
+          transform: `translate(${driftX * 0.25 + swayAmplitude}px, ${
+            driftY * 0.25
+          }px)`,
           opacity: 0.5,
         },
         {
-          transform: `translate(${driftX * 0.5 - swayAmplitude}px, ${driftY * 0.5}px)`,
+          transform: `translate(${driftX * 0.5 - swayAmplitude}px, ${
+            driftY * 0.5
+          }px)`,
           opacity: 0.5,
         },
         {
-          transform: `translate(${driftX * 0.75 + swayAmplitude}px, ${driftY * 0.75}px)`,
+          transform: `translate(${driftX * 0.75 + swayAmplitude}px, ${
+            driftY * 0.75
+          }px)`,
           opacity: 0.5,
         },
         {
@@ -77,7 +83,7 @@ const FallingIcons: React.FC = () => {
     }
 
     // Cleanup on unmount
-    return () => flakes.forEach(f => f.remove());
+    return () => flakes.forEach((f) => f.remove());
   }, []);
 
   return (

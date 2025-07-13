@@ -173,7 +173,7 @@ export default function Header() {
                       : "text-gray-700"
                       }`}
                   >
-                    Residential Living
+                    Residential Support
                   </Link>
                   <Link
                     href="/staffing"
@@ -257,7 +257,7 @@ export default function Header() {
                   href="/residential"
                   className={`block cursor-pointer text-sm sm:text-base text-[#004990]`}
                 >
-                  Residential Living
+                  Residential Support
                 </Link>
                 <Link
                   href="/staffing"
