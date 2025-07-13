@@ -23,7 +23,7 @@ export default function page() {
         showButtons={false}
       />
 
-      <section className="container mx-auto h-[2500px] p-[20px] md:p-[100px] mb-24 text-gray-800 leading-relaxed bg-white">
+      <section className="container mx-auto  p-[20px] md:p-[100px]  mb-24 text-gray-800 leading-relaxed bg-white">
         <p
           className={`${andika.className} text-[15px] font-700 text-[#7A7878]`}
         >
@@ -281,7 +281,7 @@ export default function page() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="">
           <h2
             className={`${andika.className} text-lg font-semibold text-[#03A9F4] mb-2`}
           >
@@ -320,7 +320,7 @@ export default function page() {
           </p>
         </section>
       </section>
-      <Footer></Footer>
+      <Footer className=""></Footer>
     </div>
   );
 }

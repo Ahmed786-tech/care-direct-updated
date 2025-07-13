@@ -187,8 +187,8 @@ export default function Homepage() {
         </section>
         {/* Eclipse Image Container */}
 
-        <div className="absolute left-0 -top-28- transform -translate-y-1/2 z-0">
-          <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[400px] md:h-[500px] relative ml-[-100px]">
+        <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/4 z-0">
+          <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative ml-[-140px]">
             <Image
               src="/Images/Oval.svg"
               alt="Decorative oval"
@@ -388,19 +388,23 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-        <div className="hidden md:block absolute right-0  transform   -translate-y-3/5  pointer-events-none ">
-          <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[600px] md:h-[600px] opacity-100 z-0"
-            style={{
-              backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              marginRight: "-210px",
-              transform: "scaleX(-1)", // Pulls it slightly to the right edge
-            }}
-          />
+
+        <div className="hidden md:block absolute right-0 -top-28- transform -translate-y-1/2 z-0">
+          <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative mr-[-150px]   ">
+            <Image
+              src="/Images/Oval.svg"
+              alt="Decorative oval"
+              fill
+              style={{
+                objectFit: 'contain',
+                objectPosition: 'center',
+                transform: "scaleX(-1)",
+              }}
+              priority={false}
+            />
+          </div>
         </div>
+
         <section
           className={`${isMobile && "mt-[350px]"
             } container mx-auto bg-[#084B920D] py-8 sm:py-12 md:py-16 relative z-10`}
@@ -539,32 +543,36 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-        <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
-          <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] "
-            style={{
-              backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              marginLeft: "-300px",
-            }}
-          />
+        <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/2 z-0">
+          <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative ml-[-140px]">
+            <Image
+              src="/Images/Oval.svg"
+              alt="Decorative oval"
+              fill
+              style={{
+                objectFit: 'contain',
+                objectPosition: 'center'
+              }}
+              priority={false}
+            />
+          </div>
         </div>
         <div className="container mx-auto px-4">
           <OurRecomendations />
-          <div className="hidden md:block absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
-            <div
-              className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[600px] md:h-[600px] opacity-100 z-0"
-              style={{
-                backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                marginRight: "-205px",
-                transform: "scaleX(-1)", // Pulls it slightly to the right edge
-              }}
-            />
+          <div className="hidden md:block absolute right-0 -top-28- transform -translate-y-1/5 z-0">
+            <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative mr-[-150px]">
+              <Image
+                src="/Images/Oval.svg"
+                alt="Decorative oval"
+                fill
+                style={{
+                  objectFit: 'contain',
+                  objectPosition: 'center',
+                  transform: "scaleX(-1)",
+                }}
+                priority={false}
+              />
+            </div>
           </div>
           <ContactForm />
         </div>

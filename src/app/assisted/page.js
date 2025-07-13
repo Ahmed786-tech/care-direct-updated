@@ -200,18 +200,20 @@ export default function page() {
         buttonText="Contact Us"
         buttonLink="/contact"
       />
-      <div className="hidden md:block absolute right-0  transform   -translate-y-1/6 pointer-events-none ">
-        <div
-          className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
-          style={{
-            backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-            marginRight: "-300px",
-            transform: "scaleX(-1)", // Pulls it slightly to the right edge
-          }}
-        />
+      <div className="hidden md:block absolute right-0 -top-28- transform -translate-y-1/5 z-0">
+        <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative mr-[-150px]   ">
+          <Image
+            src="/Images/Oval.svg"
+            alt="Decorative oval"
+            fill
+            style={{
+              objectFit: 'contain',
+              objectPosition: 'center',
+              transform: "scaleX(-1)",
+            }}
+            priority={false}
+          />
+        </div>
       </div>
       <WhyTheyChoose
         badgeText="Choose Us"

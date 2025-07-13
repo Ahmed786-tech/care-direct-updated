@@ -130,8 +130,8 @@ export default function Header() {
                 key={href}
                 href={href}
                 className={`relative font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap ${isActive(href)
-                    ? "text-[#004990] after:absolute after:bottom-[-5px] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[40%] after:h-[2px] after:bg-[#004990] rounded-md"
-                    : "text-[#979797] hover:text-[#004990]"
+                  ? "text-[#004990] after:absolute after:bottom-[-5px] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[40%] after:h-[2px] after:bg-[#004990] rounded-md"
+                  : "text-[#979797] hover:text-[#004990]"
                   }`}
               >
                 {label}
@@ -143,8 +143,8 @@ export default function Header() {
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 className={`flex items-center font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap ${isServicesActive
-                    ? "text-[#004990]"
-                    : "text-[#979797] hover:text-[#004990]"
+                  ? "text-[#004990]"
+                  : "text-[#979797] hover:text-[#004990]"
                   }`}
               >
                 Our Services
@@ -160,8 +160,8 @@ export default function Header() {
                   <Link
                     href="/assisted"
                     className={`block px-3 lg:px-4 py-2 text-xs lg:text-sm hover:bg-gray-100 cursor-pointer ${pathname === "/assisted"
-                        ? "text-[#004990]"
-                        : "text-gray-700"
+                      ? "text-[#004990]"
+                      : "text-gray-700"
                       }`}
                   >
                     Domiciliary Care
@@ -169,8 +169,8 @@ export default function Header() {
                   <Link
                     href="/residential"
                     className={`block px-3 lg:px-4 py-2 text-xs lg:text-sm hover:bg-gray-100 cursor-pointer ${pathname === "/residential"
-                        ? "text-[#004990]"
-                        : "text-gray-700"
+                      ? "text-[#004990]"
+                      : "text-gray-700"
                       }`}
                   >
                     Residential Living
@@ -178,8 +178,8 @@ export default function Header() {
                   <Link
                     href="/staffing"
                     className={`block px-3 lg:px-4 py-2 text-xs lg:text-sm hover:bg-gray-100 cursor-pointer ${pathname === "/staffing"
-                        ? "text-[#004990]"
-                        : "text-gray-700"
+                      ? "text-[#004990]"
+                      : "text-gray-700"
                       }`}
                   >
                     Staffing Solutions
@@ -194,8 +194,8 @@ export default function Header() {
                 key={href}
                 href={href}
                 className={`relative font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap ${isActive(href)
-                    ? "text-[#004990] after:absolute after:bottom-[-5px] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[40%] after:h-[2px] after:bg-[#004990]"
-                    : "text-[#979797] hover:text-[#004990]"
+                  ? "text-[#004990] after:absolute after:bottom-[-5px] after:left-1/2 after:transform after:-translate-x-1/2 after:w-[40%] after:h-[2px] after:bg-[#004990]"
+                  : "text-[#979797] hover:text-[#004990]"
                   }`}
               >
                 {label}
@@ -251,7 +251,7 @@ export default function Header() {
                   href="/assisted"
                   className={`block cursor-pointer text-sm sm:text-base text-[#004990]`}
                 >
-                  Assisted Living
+                  Domiciliary Care
                 </Link>
                 <Link
                   href="/residential"

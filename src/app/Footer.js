@@ -16,7 +16,7 @@ export default function Footer() {
     <>
       <div className="relative">
         <div className="absolute inset-x-0 top-0 transform -translate-y-1/2">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto px-4 sm:px-6 md:px-16 lg:px-28">
             <div className="relative container mx-auto rounded-[20px] overflow-hidden shadow-lg">
               {/* Background Image */}
               <div

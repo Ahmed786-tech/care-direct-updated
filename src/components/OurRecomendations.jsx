@@ -10,7 +10,7 @@ const OurRecomendations = () => {
       name: "Georgiana Adelina Viman",
       role: "CARE WORKER",
       description:
-        "I'm really enjoying working with Care Direct. The team is very supportive and I get to help people every day.",
+        "Amazing people and amazing team! Brilliant training and I've learned a lot with you guys! You the best!!",
       image: "/Images/Recomendations/Recomendation1.png",
       email: "georgiana@caredirect.com",
       phone: "+44 7700 900077",
@@ -21,7 +21,7 @@ const OurRecomendations = () => {
       name: "Sunitha Shine",
       role: "SENIOR CARER",
       description:
-        "Care Direct provides a great work environment. I feel valued and supported in delivering quality care.",
+        "Wonderful company! The staff is exceptional! I loved my experience with them!",
       image: "/Images/Recomendations/Recomendation2.png",
       email: "sunitha@caredirect.com",
       phone: "+44 7700 900088",
@@ -32,7 +32,7 @@ const OurRecomendations = () => {
       name: "Juanita James",
       role: "REGISTERED NURSE",
       description:
-        "I love being part of the Care Direct team. They prioritize both staff and patient wellbeing.",
+        "I have now worked for Care Direct for nearly a year. Fantastic Job and wonderful Team to work with. ",
       image: "/Images/Recomendations/Recomendation3.png",
       email: "juanita@caredirect.com",
       phone: "+44 7700 900099",
@@ -43,7 +43,7 @@ const OurRecomendations = () => {
       name: "Carl Ford",
       role: "CARE MANAGER",
       description:
-        "Care Direct maintains high standards and truly cares about delivering excellent service to clients.",
+        "A great place to work, all the staff are friendly and always happy to help. Highly recommend!!",
       image: "/Images/Recomendations/Recomendation4.png",
       email: "carl@caredirect.com",
       phone: "+44 7700 900066",
