@@ -188,13 +188,13 @@ export default function Homepage() {
 
         <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
           <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[450px] md:h-[450px]"
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[846px] md:h-[846px]"
             style={{
               backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
               backgroundPosition: "center",
-              marginLeft: "-140px",
+              marginLeft: "-300px",
             }}
           />
         </div>
@@ -258,7 +258,7 @@ export default function Homepage() {
                       />
                     </div>
                     <p
-                      className={`${poppins.className} text-[14px] sm:text-[15px] md:text-[16px] text-left font-300 text-[#888888] mt-[80px] sm:mt-[90px] md:mt-[100px] z-10`}
+                      className={`${poppins.className} text-[14px] sm:text-[15px] md:text-[16px] text-center font-300 text-[#888888] mt-[80px] sm:mt-[90px] md:mt-[100px] z-10`}
                     >
                       {card.title}
                     </p>
