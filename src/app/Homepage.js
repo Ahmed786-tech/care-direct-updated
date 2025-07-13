@@ -186,15 +186,15 @@ export default function Homepage() {
         </section>
         {/* Eclipse Image Container */}
 
-        <div className=" absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
+        <div className="absolute left-0 -top-28- transform -translate-y-1/2 z-0">
           <div
-            className=" w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[846px] md:h-[846px]"
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[400px] md:h-[500px] "
             style={{
-              backgroundImage: 'url("/images/Oval.png")',
+              backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
               backgroundPosition: "center",
-              marginLeft: "-300px",
+              marginLeft: "-100px",
             }}
           />
         </div>
