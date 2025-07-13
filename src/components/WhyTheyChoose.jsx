@@ -16,7 +16,7 @@ export default function WhyTheyChoose({
 }) {
   return (
     <section className="bg-white py-8 sm:py-12 md:py-14 lg:py-16">
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10 ">
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10 relative z-10 ">
         <div className="w-full lg:w-1/2 xl:w-2/4">
           <Badge text={badgeText} iconSrc={badgeIcon} />
 
@@ -67,13 +67,17 @@ export default function WhyTheyChoose({
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 mt-8 xl:mt-40">
+        <div className="w-full lg:w-1/2 ">
           <Image
             src={image}
             alt="Caregiver with elderly"
             width={800}
-            height={700}
-            className="rounded-[10px] mx-auto object-contain w-full h-auto"
+            height={500}
+            className={`${
+              navyBlueHeading === "Why Families Choose"
+                ? "w-auto  mt-8 lg:mt-20"
+                : "w-full  mt-8"
+            } rounded-[10px] mx-auto object-contain `}
           />
         </div>
       </div>

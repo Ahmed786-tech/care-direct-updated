@@ -200,6 +200,19 @@ export default function page() {
         buttonText="Contact Us"
         buttonLink="/contact"
       />
+      <div className="absolute right-0  transform   -translate-y-1/6 pointer-events-none ">
+        <div
+          className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
+          style={{
+            backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            marginRight: "-300px",
+            transform: "scaleX(-1)", // Pulls it slightly to the right edge
+          }}
+        />
+      </div>
       <WhyTheyChoose
         badgeText="Choose Us"
         badgeIcon="/Images/Care.svg"

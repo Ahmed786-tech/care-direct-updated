@@ -53,14 +53,14 @@ const OurRecomendations = () => {
   ];
 
   return (
-    <section className="bg-white py-8 sm:py-12 md:py-14 lg:py-16">
+    <section className="bg-white py-8 sm:py-12 md:py-14 lg:py-16 ">
       <div className="container mx-auto px-4 sm:px-6 md:px-8">
         <Badge
           text="Recommendations"
           iconSrc="/Icons/Recommendations.svg"
           alt="Recommendations"
         />
-        <div className="mb-8 sm:mb-10 md:mb-12">
+        <div className="mb-8 sm:mb-10 md:mb-12 relative z-10">
           <SectionHeadingWithButton
             heading="Our"
             span="Recommendations"

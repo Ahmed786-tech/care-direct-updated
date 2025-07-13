@@ -15,7 +15,7 @@ export default function WhatWeProvideServices({
 }) {
   return (
     <section
-      className="min-h-[650px] py-8 sm:py-10 md:py-12 px-4 sm:px-5 md:px-6 overflow-hidden" // Changed overflow-visible to overflow-hidden
+      className="min-h-[650px] py-8 sm:py-10 md:py-12 px-4 sm:px-5 md:px-6 overflow-hidden relative z-10" // Changed overflow-visible to overflow-hidden
       // className="min-h-[630px] py-8 sm:py-10 md:py-12 px-4 sm:px-5 md:px-6 overflow-hidden" // Changed overflow-visible to overflow-hidden
       style={{
         backgroundImage: "url('/Images/Background-5.png')",

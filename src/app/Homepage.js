@@ -188,13 +188,13 @@ export default function Homepage() {
 
         <div className="absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
           <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[300px] md:h-[400px] "
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[846px] md:w-[846px] md:h-[400px] "
             style={{
               backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
               backgroundPosition: "center",
-              marginLeft: "-100px",
+              marginLeft: "-300px",
             }}
           />
         </div>
@@ -386,13 +386,13 @@ export default function Homepage() {
         </section>
         <div className="absolute right-0  transform   -translate-y-3/5  pointer-events-none ">
           <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[300px] md:h-[400px] opacity-100 z-0"
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
             style={{
               backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
               backgroundPosition: "center",
-              marginRight: "-80px",
+              marginRight: "-300px",
               transform: "scaleX(-1)", // Pulls it slightly to the right edge
             }}
           />
@@ -535,18 +535,29 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-
+        <div className="absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
+          <div
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] "
+            style={{
+              backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              marginLeft: "-300px",
+            }}
+          />
+        </div>
         <div className="container mx-auto px-4">
           <OurRecomendations />
           <div className="absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
             <div
-              className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[300px] md:h-[450px] opacity-100 z-0"
+              className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
               style={{
                 backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
                 backgroundPosition: "center",
-                marginRight: "-80px",
+                marginRight: "-300px",
                 transform: "scaleX(-1)", // Pulls it slightly to the right edge
               }}
             />

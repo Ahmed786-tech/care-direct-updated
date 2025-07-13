@@ -67,9 +67,9 @@ export default function about() {
         isAboutUsPage={true}
         cardData={cardData}
       />
-      <section className="w-full bg-white p-4 sm:p-5 lg:p-6">
+      <section className="w-full bg-white p-4 sm:p-5 lg:p-6 ">
         <div
-          className="container mx-auto px-4 min-h-[200px] sm:min-h-[250px] md:min-h-[280px] lg:h-[311.51px] my-6 sm:my-8 lg:my-10 rounded-[15px] py-6 sm:py-8 lg:py-10 text-white text-center"
+          className="container relative z-10 mx-auto px-4 min-h-[200px] sm:min-h-[250px] md:min-h-[280px] lg:h-[311.51px] my-6 sm:my-8 lg:my-10 rounded-[15px] py-6 sm:py-8 lg:py-10 text-white text-center"
           style={{
             backgroundImage: "url('/Images/Background-4.png')",
             backgroundSize: "cover",
@@ -91,7 +91,20 @@ export default function about() {
           </p>
         </div>
       </section>
-      <section className="relative bg-white flex flex-col justify-start px-4 sm:px-6 lg:px-8">
+      <div className="absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
+        <div
+          className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
+          style={{
+            backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            marginRight: "-300px",
+            transform: "scaleX(-1)", // Pulls it slightly to the right edge
+          }}
+        />
+      </div>
+      <section className=" bg-white flex flex-col justify-start px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
           {/* Left Text Section */}
           <div className="w-full flex flex-col py-6 sm:py-8 lg:py-12 justify-center mt-4 sm:mt-5 lg:mt-7">
