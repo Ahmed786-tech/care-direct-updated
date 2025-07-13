@@ -186,11 +186,11 @@ export default function Homepage() {
         </section>
         {/* Eclipse Image Container */}
 
-        <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
+        <div className=" absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
           <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[846px] md:h-[846px]"
+            className="hidden md:block w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[846px] md:h-[846px]"
             style={{
-              backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
+              backgroundImage: 'url("/images/Oval.png")',
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
               backgroundPosition: "center",
@@ -386,13 +386,13 @@ export default function Homepage() {
         </section>
         <div className="hidden md:block absolute right-0  transform   -translate-y-3/5  pointer-events-none ">
           <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[600px] md:h-[600px] opacity-100 z-0"
             style={{
               backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
               backgroundPosition: "center",
-              marginRight: "-300px",
+              marginRight: "-210px",
               transform: "scaleX(-1)", // Pulls it slightly to the right edge
             }}
           />
@@ -551,13 +551,13 @@ export default function Homepage() {
           <OurRecomendations />
           <div className="hidden md:block absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
             <div
-              className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
+              className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[600px] md:h-[600px] opacity-100 z-0"
               style={{
                 backgroundImage: 'url("/images/Oval.svg?height=400&width=400")',
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "contain",
                 backgroundPosition: "center",
-                marginRight: "-300px",
+                marginRight: "-205px",
                 transform: "scaleX(-1)", // Pulls it slightly to the right edge
               }}
             />
