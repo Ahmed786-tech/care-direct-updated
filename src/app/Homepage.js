@@ -2,6 +2,7 @@
 import { ibmPlexSans, poppins, heebo, andika, roboto } from "@/app/font";
 import Link from "next/link";
 import Image from "next/image";
+
 import ReCAPTCHA from "react-google-recaptcha";
 import { ArrowRight, Bold } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
@@ -187,17 +188,20 @@ export default function Homepage() {
         {/* Eclipse Image Container */}
 
         <div className="absolute left-0 -top-28- transform -translate-y-1/2 z-0">
-          <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[400px] md:h-[500px] "
-            style={{
-              backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "center",
-              marginLeft: "-100px",
-            }}
-          />
+          <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[400px] md:h-[500px] relative ml-[-100px]">
+            <Image
+              src="/Images/Oval.svg"
+              alt="Decorative oval"
+              fill
+              style={{
+                objectFit: 'contain',
+                objectPosition: 'center'
+              }}
+              priority={false}
+            />
+          </div>
         </div>
+
 
         <section className="container  mx-auto bg-white py-8 sm:py-12 md:py-14 lg:py-16">
           <div className="container mx-auto px-4">
