@@ -91,7 +91,7 @@ export default function about() {
           </p>
         </div>
       </section>
-      <div className="absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
+      <div className="hidden md:block absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
         <div
           className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
           style={{

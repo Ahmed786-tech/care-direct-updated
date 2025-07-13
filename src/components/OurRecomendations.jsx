@@ -54,8 +54,9 @@ const OurRecomendations = () => {
 
   return (
     <section className="bg-white py-8 sm:py-12 md:py-14 lg:py-16 ">
-      <div className="container mx-auto px-4 sm:px-6 md:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <Badge
+          className=""
           text="Recommendations"
           iconSrc="/Icons/Recommendations.svg"
           alt="Recommendations"

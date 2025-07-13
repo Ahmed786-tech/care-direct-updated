@@ -121,7 +121,7 @@ const OurServices = () => {
 
   return (
     <>
-      <div className="relative mt-[670px] sm:mt-[300px] md:mt-[50px] lg:mt-0 px-4 md:px-6 lg:px-8">
+      <div className="relative z-10 mt-[670px] sm:mt-[300px] md:mt-[50px] lg:mt-0 px-4 md:px-6 lg:px-8">
         <Badge text="Services" iconSrc="/Images/Services.svg" />
         <SectionHeadingWithButton
           heading="Our"

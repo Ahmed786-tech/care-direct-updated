@@ -41,8 +41,9 @@ export default function RootLayout({
       className={`${ibmPlexSans.variable} ${poppins.variable} ${heebo.variable} ${andika.variable} ${roboto.variable} ${figtree.variable} ${inter.variable} ${montserrat.variable} ${redHatDisplay.variable}`}
     >
       <head>
-      <Script id="nextdoor-pixel"  strategy="afterInteractive">
-    {`!function(e,n){var t,p;e.ndp||((t=e.ndp=function(){
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Script id="nextdoor-pixel" strategy="afterInteractive">
+          {`!function(e,n){var t,p;e.ndp||((t=e.ndp=function(){
     t.handleRequest?t.handleRequest.apply(t,arguments):t.queue.push(arguments)
     }).queue=[],t.v=1,(p=n.createElement(e="script")).async=!0,
     p.src="https://ads.nextdoor.com/public/pixel/ndp.js?id=b36a23e1-b0cb-4200-9b24-0fa1f9fd3863",
@@ -51,18 +52,20 @@ export default function RootLayout({
 
     ndp('init','b36a23e1-b0cb-4200-9b24-0fa1f9fd3863', {});
     ndp('track','PAGE_VIEW');`}
-      </Script>
- 
-     
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <noscript>
-    <img height="1" width="1" style={{display:'none'}}
-       src="https://flask.nextdoor.com/pixel?pid=b36a23e1-b0cb-4200-9b24-0fa1f9fd3863&ev=PAGE_VIEW&noscript=1"/>
-  </noscript>
-    <NextdoorTracker />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://flask.nextdoor.com/pixel?pid=b36a23e1-b0cb-4200-9b24-0fa1f9fd3863&ev=PAGE_VIEW&noscript=1"
+          />
+        </noscript>
+        <NextdoorTracker />
         {children}
       </body>
     </html>

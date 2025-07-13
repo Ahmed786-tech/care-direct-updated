@@ -76,7 +76,7 @@ export default function Homepage() {
   ];
 
   return (
-    <main className="bg-white w-full">
+    <main className="bg-white w-full overflow-x-hidden">
       <Snowfall />
       <div className="">
         <HeroSection
@@ -99,7 +99,7 @@ export default function Homepage() {
         <section className="container mx-auto mt-[20px]  ">
           <div className="container mx-auto px-4">
 
-            <div className="relative from-lightBlue to-backgroundGray h-52 rounded-[80px] -mb-10 sm:py-72 md:py-52 lg:py-40 xl:py-28 ">
+            <div className="relative from-lightBlue to-backgroundGray h-52 rounded-[80px] -mb-10 sm:py-72 md:py-52 lg:py-40 xl:py-28 z-10">
               <div className="absolute top-[300px] md:top-[300px] lg:top-[270px] xl:top-[260px] 2xl:top-[245px] left-1/2 transform -translate-x-1/2 w-full -mt-75  px-4">
                 <div className="flex flex-col md:grid md:grid-cols-2 md:gap-4 lg:flex lg:flex-row lg:justify-center lg:gap-0">
                   {featuredRoles.map((role, index) => {
@@ -186,15 +186,15 @@ export default function Homepage() {
         </section>
         {/* Eclipse Image Container */}
 
-        <div className="absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
+        <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
           <div
-            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[846px] md:w-[846px] md:h-[400px] "
+            className="w-[200px] h-[300px] sm:w-[250px] sm:h-[250px] md:w-[450px] md:h-[450px]"
             style={{
               backgroundImage: 'url("/images/Oval.svg?height=400&width=300")',
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
               backgroundPosition: "center",
-              marginLeft: "-300px",
+              marginLeft: "-140px",
             }}
           />
         </div>
@@ -384,7 +384,7 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-        <div className="absolute right-0  transform   -translate-y-3/5  pointer-events-none ">
+        <div className="hidden md:block absolute right-0  transform   -translate-y-3/5  pointer-events-none ">
           <div
             className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
             style={{
@@ -535,7 +535,7 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-        <div className="absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
+        <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/2 pointer-events-none z-0">
           <div
             className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] "
             style={{
@@ -549,7 +549,7 @@ export default function Homepage() {
         </div>
         <div className="container mx-auto px-4">
           <OurRecomendations />
-          <div className="absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
+          <div className="hidden md:block absolute right-0  transform   -translate-y-2/5  pointer-events-none ">
             <div
               className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[846px] md:h-[846px] opacity-100 z-0"
               style={{
