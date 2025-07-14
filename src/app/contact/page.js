@@ -113,9 +113,9 @@ export default function page() {
                   required
                 >
                   <option value="">Choose a service</option>
-                  <option value="healthcare">Health Care</option>
-                  <option value="homecare">Home Care</option>
-                  <option value="support">Support Services</option>
+                  <option value="healthcare">Domiciliary Care</option>
+                  <option value="homecare">Residential Support</option>
+                  <option value="support">Staffing Solutions</option>
                 </select>
               </div>
 
@@ -230,7 +230,6 @@ export default function page() {
                   className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]"
                 />{" "}
                 389a London Rd, St. Leonards-on-Sea TN37 6PA
-
               </p>
             </div>
 

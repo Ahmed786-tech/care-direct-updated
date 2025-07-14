@@ -63,10 +63,26 @@ export default function page() {
       image: "/Images/Card-img14.png",
     },
     {
+      title: "Care Homes",
+      description: "Full-time and relief staffing for care homes",
+      image: "/Images/Card-img10.png",
+    },
+    {
+      title: "Assistance",
+      description: "Medication administration and mobility assistance",
+      image: "/Images/Card-img12.png",
+    },
+    {
+      title: "Daily Routine",
+      description: "Dementia, mental health, and palliative care experience",
+      image: "/Images/Card-img13.png",
+    },
+    {
       title: "Personal",
       description: "Personal hygiene and nutritional support",
       image: "/Images/Card-img14.png",
     },
+
   ];
   const faqs = [
     {

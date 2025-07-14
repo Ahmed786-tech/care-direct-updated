@@ -411,115 +411,115 @@ export default function Homepage() {
             />
           </div>
         </div>
-
-        <section
-          className={`${isMobile && "mt-[350px]"
-            } container mx-auto bg-[#084B920D] py-8 sm:py-12 md:py-16 relative z-10`}
-        >
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8">
-              <div className="w-full">
-                <div>
-                  <Badge text="Blogs"
-                    textColor="#A8D5BA"
-                    badgeColor="#A8D5BA26"
-                    iconSrc="/Images/Blogs.svg" />
-                  <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between gap-4 sm:gap-0">
-                    <h3
-                      className={`${ibmPlexSans.className} text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-blue-900 text-center sm:text-left`}
-                    >
-                      Care Direct{" "}
-                      <span className="text-[#03A9F4]">Blogs</span>
-                    </h3>
-                    <a
-                      href="#"
-                      className={`${heebo.className} inline-flex items-center justify-center bg-[#084B92] text-white text-[12px] sm:text-sm hover:bg-opacity-90 px-6 sm:px-8 py-3 sm:py-4 rounded-full whitespace-nowrap`}
-                    >
-                      Read All Articles
-                      <span
-                        className="flex items-center justify-center bg-white rounded-full ml-[10px] sm:ml-[15px]"
-                        style={{ width: "28px", height: "28px", padding: "6px" }}
+        <div className="bg-[#084B920D]">
+          <section
+            className={`${isMobile && "mt-[350px]"
+              } container mx-auto  py-8 sm:py-12 md:py-16 relative z-10`}
+          >
+            <div className="container mx-auto px-4">
+              <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8">
+                <div className="w-full">
+                  <div>
+                    <Badge text="Blogs"
+                      textColor="#A8D5BA"
+                      badgeColor="#A8D5BA26"
+                      iconSrc="/Images/Blogs.svg" />
+                    <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between gap-4 sm:gap-0">
+                      <h3
+                        className={`${ibmPlexSans.className} text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-blue-900 text-center sm:text-left`}
                       >
-                        <ArrowRight className="text-[#084B92] w-4 h-4 sm:w-5 sm:h-5" />
-                      </span>
-                    </a>
+                        Care Direct{" "}
+                        <span className="text-[#03A9F4]">Blogs</span>
+                      </h3>
+                      <a
+                        href="#"
+                        className={`${heebo.className} inline-flex items-center justify-center bg-[#084B92] text-white text-[12px] sm:text-sm hover:bg-opacity-90 px-6 sm:px-8 py-3 sm:py-4 rounded-full whitespace-nowrap`}
+                      >
+                        Read All Articles
+                        <span
+                          className="flex items-center justify-center bg-white rounded-full ml-[10px] sm:ml-[15px]"
+                          style={{ width: "28px", height: "28px", padding: "6px" }}
+                        >
+                          <ArrowRight className="text-[#084B92] w-4 h-4 sm:w-5 sm:h-5" />
+                        </span>
+                      </a>
+                    </div>
+
+
                   </div>
-
-
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-              {[
-                {
-                  image: "/Images/Card-img5.png",
-                  title: "How to Choose Home Care that Feels Like Family",
-                  description:
-                    "Finding the right home care is crucial for your loved one's wellbeing. Learn how to evaluate care providers, understand different care options, and ensure your family member receives compassionate, professional support in the comfort of their home.",
-                  // profile: "/Images/Profile-img1.png",
-                  // author: "Joanna Wellick",
-                  // date: "June 28, 2018",
-                  tags: ["Aenean Eleifend", "Aliquam"],
-                },
-                {
-                  image: "/Images/Card-img6.png",
-                  title: "Why Compassionate Care Is Our Core Value",
-                  description:
-                    "At Care Direct, compassion isn't just a buzzword - it's the foundation of everything we do. Discover how our commitment to empathetic care creates better outcomes for clients and their families, while maintaining the highest standards of professional service.",
-                  // profile: "/Images/Profile-img1.png",
-                  // author: "Joanna Wellick",
-                  // date: "June 28, 2018",
-                  tags: ["Aenean Eleifend"],
-                },
-                {
-                  image: "/Images/image.png",
-                  title: "A Day in the Life of a Caregiver at Care Direct",
-                  description:
-                    "Experience what it means to be a professional caregiver at Care Direct. From morning routines to evening check-ins, learn about the rewarding moments and challenges that make caregiving such a meaningful career choice. We are committed to providing the best care.",
-                  // profile: "/Images/Profile-img1.png",
-                  // author: "Joanna Wellick",
-                  // date: "June 28, 2018",
-                  tags: ["Aenean Eleifend", "Aliquam"],
-                },
-              ].map((blog, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-[20px] shadow-lg overflow-hidden"
-                >
-                  <div className="relative">
-                    <img
-                      src={blog.image}
-                      alt={blog.title}
-                      className="w-full h-48 sm:h-56 md:h-72 object-cover border-[2px] border-white rounded-[20px] p-2 sm:p-3"
-                    />
-                    <div className="absolute top-3 sm:top-5 left-3 sm:left-5 flex flex-wrap gap-2">
-                      {blog.tags.map((tag, i) => (
-                        <span
-                          key={i}
-                          className={`${poppins.className} ${tag === "Aenean Eleifend"
-                            ? "bg-[#03A9F44D]"
-                            : "bg-[#03A9F44D]"
-                            } text-white text-[10px] sm:text-[12px] rounded-full font-500 p-1.5 sm:p-2`}
-                        >
-                          {tag}
-                        </span>
-                      ))}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                {[
+                  {
+                    image: "/Images/Card-img5.png",
+                    title: "How to Choose Home Care that Feels Like Family",
+                    description:
+                      "Finding the right home care is crucial for your loved one's wellbeing. Learn how to evaluate care providers, understand different care options, and ensure your family member receives compassionate, professional support in the comfort of their home.",
+                    // profile: "/Images/Profile-img1.png",
+                    // author: "Joanna Wellick",
+                    // date: "June 28, 2018",
+                    tags: ["Aenean Eleifend", "Aliquam"],
+                  },
+                  {
+                    image: "/Images/Card-img6.png",
+                    title: "Why Compassionate Care Is Our Core Value",
+                    description:
+                      "At Care Direct, compassion isn't just a buzzword - it's the foundation of everything we do. Discover how our commitment to empathetic care creates better outcomes for clients and their families, while maintaining the highest standards of professional service.",
+                    // profile: "/Images/Profile-img1.png",
+                    // author: "Joanna Wellick",
+                    // date: "June 28, 2018",
+                    tags: ["Aenean Eleifend"],
+                  },
+                  {
+                    image: "/Images/image.png",
+                    title: "A Day in the Life of a Caregiver at Care Direct",
+                    description:
+                      "Experience what it means to be a professional caregiver at Care Direct. From morning routines to evening check-ins, learn about the rewarding moments and challenges that make caregiving such a meaningful career choice. We are committed to providing the best care.",
+                    // profile: "/Images/Profile-img1.png",
+                    // author: "Joanna Wellick",
+                    // date: "June 28, 2018",
+                    tags: ["Aenean Eleifend", "Aliquam"],
+                  },
+                ].map((blog, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-[20px] shadow-lg overflow-hidden"
+                  >
+                    <div className="relative">
+                      <img
+                        src={blog.image}
+                        alt={blog.title}
+                        className="w-full h-48 sm:h-56 md:h-72 object-cover border-[2px] border-white rounded-[20px] p-2 sm:p-3"
+                      />
+                      <div className="absolute top-3 sm:top-5 left-3 sm:left-5 flex flex-wrap gap-2">
+                        {blog.tags.map((tag, i) => (
+                          <span
+                            key={i}
+                            className={`${poppins.className} ${tag === "Aenean Eleifend"
+                              ? "bg-[#03A9F44D]"
+                              : "bg-[#03A9F44D]"
+                              } text-white text-[10px] sm:text-[12px] rounded-full font-500 p-1.5 sm:p-2`}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                  <div className="p-4 sm:p-5 md:p-6">
-                    <h3
-                      className={`${poppins.className} font-normal text-center text-[16px] sm:text-[18px] md:text-[20px] font-500 text-[#084B92] mb-2`}
-                    >
-                      {blog.title}
-                    </h3>
-                    <p
-                      className={`${poppins.className} text-[#888888] text-[12px] sm:text-[13px] md:text-[14px] font-400 mb-3 sm:mb-4 text-center line-clamp-4 sm:line-clamp-none`}
-                    >
-                      {blog.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        {/* <Image
+                    <div className="p-4 sm:p-5 md:p-6">
+                      <h3
+                        className={`${poppins.className} font-normal text-center text-[16px] sm:text-[18px] md:text-[20px] font-500 text-[#084B92] mb-2`}
+                      >
+                        {blog.title}
+                      </h3>
+                      <p
+                        className={`${poppins.className} text-[#888888] text-[12px] sm:text-[13px] md:text-[14px] font-400 mb-3 sm:mb-4 text-center line-clamp-4 sm:line-clamp-none`}
+                      >
+                        {blog.description}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          {/* <Image
                           src={blog.profile}
                           alt={blog.author}
                           width={100}
@@ -527,32 +527,33 @@ export default function Homepage() {
                           className="w-10 h-10"
                         />
                         <p className="font-normal">{blog.author}</p> */}
+                        </div>
+                        {/* <div className="w-10 h-px border-t border-[#6C757D66]"></div> */}
+                        {/* <p className="text-[#6C757D]">{blog.date}</p> */}
                       </div>
-                      {/* <div className="w-10 h-px border-t border-[#6C757D66]"></div> */}
-                      {/* <p className="text-[#6C757D]">{blog.date}</p> */}
-                    </div>
-                    <a
-                      href="#"
-                      className={`${heebo.className} w-full inline-flex items-center justify-center text-[#03A9F4] text-[14px] sm:text-[16px] md:text-[18px] hover:bg-opacity-30 transition mt-3 sm:mt-4`}
-                    >
-                      Learn More
-                      <span
-                        className="flex items-center justify-center bg-[#03A9F4] rounded-full ml-[10px] sm:ml-[15px]"
-                        style={{
-                          width: "28px",
-                          height: "28px",
-                          padding: "5px",
-                        }}
+                      <a
+                        href="#"
+                        className={`${heebo.className} w-full inline-flex items-center justify-center text-[#03A9F4] text-[14px] sm:text-[16px] md:text-[18px] hover:bg-opacity-30 transition mt-3 sm:mt-4`}
                       >
-                        <ArrowRight className="text-white w-4 h-4 sm:w-5 sm:h-5" />
-                      </span>
-                    </a>
+                        Learn More
+                        <span
+                          className="flex items-center justify-center bg-[#03A9F4] rounded-full ml-[10px] sm:ml-[15px]"
+                          style={{
+                            width: "28px",
+                            height: "28px",
+                            padding: "5px",
+                          }}
+                        >
+                          <ArrowRight className="text-white w-4 h-4 sm:w-5 sm:h-5" />
+                        </span>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
         <div className="hidden md:block absolute left-0 -top-28- transform -translate-y-1/2 z-0">
           <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative ml-[-140px]">
             <Image
@@ -567,7 +568,7 @@ export default function Homepage() {
             />
           </div>
         </div>
-        <div className="container mx-auto px-4 pb-12 md:pb-20">
+        <div className=" mx-auto px-4 pb-12 md:pb-20">
           <OurRecomendations />
           <div className="hidden md:block absolute right-0 -top-28- transform -translate-y-1/5 z-0">
             <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative mr-[-150px]">

@@ -63,6 +63,27 @@ export default function page() {
       description: "24/7 availability for urgent staffing requests",
       image: "/Images/Card-img14.png",
     },
+    {
+      title: "Staff Placement",
+      description: "Temporary and long-term care staff placement",
+      image: "/Images/Card-img10.png",
+    },
+    {
+      title: "RGN & RMN",
+      description: "RGN and RMN and clinical roles filled quickly and reliably",
+      image: "/Images/Card-img12.png",
+    },
+    {
+      title: "Daily Routine",
+      description:
+        "Dementia, mental health, palliative, and complex needs experience",
+      image: "/Images/Card-img13.png",
+    },
+    {
+      title: "Availability",
+      description: "24/7 availability for urgent staffing requests",
+      image: "/Images/Card-img14.png",
+    },
   ];
   const faqs = [
     {

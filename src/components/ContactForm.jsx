@@ -24,15 +24,15 @@ const ContactForm = () => {
                 alt="Person with phone"
                 width={550}
                 height={800}
-                className="w-full object-cover "
+                className="w-full object-cover"
               />
             </div>
 
             {/* Right Side - Form */}
             <div className="relative z-10 w-full md:w-1/2 bg-white border-[1px] sm:border-[1.5px] md:border-[2px] border-[#D4D0D0] p-4 sm:p-6 md:p-8 rounded-[10px] sm:rounded-[15px] md:rounded-[20px]">
               <Badge
-                badgeText="Contact"
-                badgeTextColor="#A8D5BA"
+                text="Contact"
+                textColor="#A8D5BA"
                 badgeColor="#A8D5BA26"
                 iconSrc="/Images/Contact.svg"
               />
@@ -87,9 +87,9 @@ const ContactForm = () => {
                     required
                   >
                     <option value="">Choose a service</option>
-                    <option value="healthcare">Health Care</option>
-                    <option value="homecare">Home Care</option>
-                    <option value="support">Support Services</option>
+                    <option value="healthcare">Domiciliary Care</option>
+                    <option value="homecare">Residential Support</option>
+                    <option value="support">Staffing Solutions</option>
                   </select>
                 </div>
 
