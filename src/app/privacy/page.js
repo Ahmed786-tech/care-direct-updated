@@ -319,7 +319,7 @@ export default function page() {
               info@caredirectrecruitment.co.uk
             </a>
             <br />
-            <strong>Phone:</strong> 01424 717519
+            <strong>Phone:</strong> 01424 716 739
           </p>
         </section>
       </section>

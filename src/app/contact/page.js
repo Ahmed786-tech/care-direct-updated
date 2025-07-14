@@ -183,7 +183,7 @@ export default function page() {
                     height={24}
                     className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]"
                   />{" "}
-                  0800 123 4567
+                  01424 716 739
                 </p>
                 <p className="flex items-center text-[16px] sm:text-[17px] md:text-[18px] font-400 text-gray-500 gap-2 sm:gap-3">
                   <Image
@@ -193,7 +193,8 @@ export default function page() {
                     height={24}
                     className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]"
                   />{" "}
-                  example@example.com
+                  info@caredirectrecruitment.co.uk
+
                 </p>
                 <div className="flex items-center text-blue-900 gap-4 sm:gap-6 pt-2 sm:pt-4">
                   <a href="" className="hover:text-[#03A9F4] transition-colors">
