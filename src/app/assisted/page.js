@@ -61,26 +61,6 @@ export default function page() {
       description: "Companionship and emotional support",
       image: "/Images/Card-img14.png",
     },
-    {
-      title: "Support",
-      description: "Support with personal care and hygiene",
-      image: "/Images/Card-img10.png",
-    },
-    {
-      title: "Assistance",
-      description: "Medication reminders and mobility assistance",
-      image: "/Images/Card-img12.png",
-    },
-    {
-      title: "Daily Routine",
-      description: "Meal preparation and daily routines",
-      image: "/Images/Card-img13.png",
-    },
-    {
-      title: "Emotional Support",
-      description: "Companionship and emotional support",
-      image: "/Images/Card-img14.png",
-    },
 
   ];
   const cardData = [
