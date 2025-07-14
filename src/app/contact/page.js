@@ -229,7 +229,8 @@ export default function page() {
                   height={24}
                   className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]"
                 />{" "}
-                1234 Main St, Anytown, UK 12345
+                389a London Rd, St. Leonards-on-Sea TN37 6PA
+
               </p>
             </div>
 

@@ -81,12 +81,16 @@ const ContactForm = () => {
                   >
                     Service
                   </label>
-                  <input
-                    type="text"
+                  <select
                     id="service"
-                    placeholder="Area of Service"
-                    className={`${poppins.className} w-full p-3 sm:p-3.5 md:p-4 border border-[#C8C8C8] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[6px] sm:rounded-[7px] md:rounded-[8px] focus:outline-none focus:ring-2 focus:ring-blue-500`}
-                  />
+                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#C8C8C8] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[8px] focus:outline-none focus:ring-2 focus:ring-blue-500`}
+                    required
+                  >
+                    <option value="">Choose a service</option>
+                    <option value="healthcare">Health Care</option>
+                    <option value="homecare">Home Care</option>
+                    <option value="support">Support Services</option>
+                  </select>
                 </div>
 
                 <div>

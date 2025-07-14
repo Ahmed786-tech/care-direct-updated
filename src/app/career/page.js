@@ -486,7 +486,7 @@ export default function page() {
             badgeColor="#A8D5BA26" iconSrc="/Images/Assisted-li.svg" />
 
           {/* Heading and button inline */}
-          <div className="flex flex-col sm:flex-row justify-between bg-[#084B9205] items-start sm:items-center gap-4 sm:gap-0 mb-4 sm:mb-6">
+          <div className="flex flex-col sm:flex-row justify-between  items-start sm:items-center gap-4 sm:gap-0 mb-4 sm:mb-6">
             <h2
               className={`${ibmPlexSans.className} text-[24px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-bold text-gray-800 `}
             >
@@ -596,8 +596,8 @@ export default function page() {
       </section>
       <GettingStartedinServices
 
-        text="Starting"
-        textColor="#A8D5BA"
+        badgeText="Starting"
+        badgeTextColor="#A8D5BA"
         badgeColor="#A8D5BA26"
         badgeIcon="/Images/Starting.svg"
         buttonText="Contact Us"

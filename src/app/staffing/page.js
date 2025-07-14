@@ -171,9 +171,24 @@ export default function page() {
         buttonText="Contact Us"
         buttonLink="/contact"
       />
+      <div className="hidden md:block absolute right-0 -top-28- transform -translate-y-1/3 z-0">
+        <div className="w-[200px] h-[300px] sm:w-[250px] sm:h-[350px] md:w-[500px] md:h-[600px] relative mr-[-150px]">
+          <Image
+            src="/Images/Oval.svg"
+            alt="Decorative oval"
+            fill
+            style={{
+              objectFit: 'contain',
+              objectPosition: 'center',
+              transform: "scaleX(-1)",
+            }}
+            priority={false}
+          />
+        </div>
+      </div>
       <WhyTheyChoose
 
-        badgeText="Care"
+        badgeText="Choose us"
         badgeTextColor="#A8D5BA"
         badgeColor="#A8D5BA26"
 

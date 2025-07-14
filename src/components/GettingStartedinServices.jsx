@@ -46,7 +46,7 @@ export default function GettingStartedinServices({
           {/* Left Column */}
           <div className="flex flex-col gap-6">
             {/* Step 1 */}
-            <div className="relative border border-[#A2CFFF] rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
+            <div className="relative border border-[#A2CFFF] bg-white rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
               <span className="absolute z-10 top-[10px] sm:top-[15px] md:top-[20px] right-[15px] sm:right-[20px] md:right-[25px] text-[40px] sm:text-[52px] md:text-[64px] font-bold text-[#FFF4B1B2]">
                 {stepsData[0].number}
               </span>
@@ -67,7 +67,7 @@ export default function GettingStartedinServices({
             </div>
 
             {/* Step 2 */}
-            <div className="relative border border-[#A2CFFF] rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
+            <div className="relative border bg-white border-[#A2CFFF] rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
               <span className="absolute top-[10px] sm:top-[15px] md:top-[20px] right-[15px] sm:right-[20px] md:right-[25px] text-[40px] sm:text-[52px] md:text-[64px] font-bold text-[#FFF4B1B2]">
                 {stepsData[1].number}
               </span>
@@ -112,7 +112,7 @@ export default function GettingStartedinServices({
           {/* Right Column */}
           <div className="flex flex-col gap-6">
             {/* Step 3 */}
-            <div className="relative border border-[#A2CFFF] rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
+            <div className="relative border bg-white border-[#A2CFFF] rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
               <span className="absolute top-[10px] sm:top-[15px] md:top-[20px] right-[15px] sm:right-[20px] md:right-[25px] text-[40px] sm:text-[52px] md:text-[64px] font-bold text-[#FFF4B1B2]">
                 {stepsData[2].number}
               </span>
@@ -133,7 +133,7 @@ export default function GettingStartedinServices({
             </div>
 
             {/* Step 4 */}
-            <div className="relative border border-[#A2CFFF] rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
+            <div className="relative border bg-white border-[#A2CFFF] rounded-[20px] p-4 sm:p-5 md:p-6 h-auto sm:h-[200px] md:h-[220px] w-full flex flex-col justify-center">
               <span className="absolute top-[10px] sm:top-[15px] md:top-[20px] right-[15px] sm:right-[20px] md:right-[25px] text-[40px] sm:text-[52px] md:text-[64px] font-bold text-[#FFF4B1B2]">
                 {stepsData[3].number}
               </span>
