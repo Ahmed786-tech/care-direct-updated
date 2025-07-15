@@ -29,23 +29,30 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when pathname changes
+  // Close mobile menu and services dropdown when pathname changes
   useEffect(() => {
     setMenuOpen(false);
     setIsServicesOpen(false);
   }, [pathname]);
 
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside (but not when clicking on the button itself)
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!event.target.closest('.services-dropdown')) {
+      // Only close if we're not clicking on a dropdown button or dropdown content
+      if (!event.target.closest('.services-dropdown') &&
+        !event.target.closest('.mobile-services-dropdown') &&
+        !event.target.matches('button')) {
         setIsServicesOpen(false);
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    // Only add listener when dropdown is open
+    if (isServicesOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
     return () => document.removeEventListener('click', handleClickOutside);
-  }, []);
+  }, [isServicesOpen]);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -133,7 +140,7 @@ export default function Header() {
 
       {/* Main Header */}
       <div className={`bg-white py-3 sm:py-5 lg:py-7 px-4 sm:px-7 z-20 ${isSticky ? 'fixed top-0 left-0 right-0 shadow-md transition-all duration-300' : ''}`}>
-        <div className="container mx-auto flex justify-between items-center relative z-20">
+        <div className="container mx-auto flex justify-between items-center relative z-20 min-h-[40px]">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="cursor-pointer">
@@ -150,7 +157,7 @@ export default function Header() {
 
           {/* Desktop/Tablet Nav */}
           <nav
-            className={`${poppins?.className || ""} hidden md:flex gap-4 lg:gap-8 text-xs lg:text-sm text-[#979797] relative`}
+            className={`${poppins?.className || ""} hidden md:flex gap-4 lg:gap-8 text-xs lg:text-sm text-[#979797] relative flex-shrink-0`}
           >
             {/* Left links: Home and About Us */}
             {navLinks.slice(0, 2).map(({ href, label }) => (
@@ -231,10 +238,10 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button - Ensure it's always visible on mobile */}
-          <div className="flex md:hidden items-center justify-center min-w-[40px]">
+          {/* Mobile Menu Button - Always visible on mobile with fixed positioning */}
+          <div className="block md:hidden">
             <button
-              className="text-xl sm:text-2xl text-[#004990] cursor-pointer p-1 flex items-center justify-center"
+              className="text-xl sm:text-2xl text-[#004990] cursor-pointer p-2 flex items-center justify-center w-10 h-10 relative z-50"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle mobile menu"
             >
@@ -262,7 +269,7 @@ export default function Header() {
           </Link>
 
           {/* Dropdown Toggle */}
-          <div>
+          <div className="mobile-services-dropdown">
             <button
               onClick={() => setIsServicesOpen(!isServicesOpen)}
               className="w-full text-left font-medium flex items-center justify-between cursor-pointer text-sm sm:text-base text-[#004990]"
