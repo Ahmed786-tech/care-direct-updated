@@ -7,6 +7,7 @@ import {
   roboto,
   figtree,
 } from "@/app/font";
+import JobApplicationModal from "@/components/JobApplicationModal";
 
 import Link from "next/link";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -23,7 +24,7 @@ import JobsForm from "../../components/JobsForm";
 
 export default function page() {
   const [verified, setVerified] = useState(false);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const handleRecaptchaChange = (value) => {
     if (value) setVerified(true);
   };
@@ -136,6 +137,7 @@ export default function page() {
             </div>
             <div className="flex items-center justify-center xl:justify-end">
               <button
+                onClick={() => setIsModalOpen(true)}
                 className={`${heebo.className} h-[48px] sm:h-[56px] md:h-[63px] w-full sm:w-[250px] md:w-[280px] lg:w-[300px] bg-[#084B92] text-white px-6 sm:px-8 py-3 rounded-full cursor-pointer hover:bg-blue-800 transition-colors flex items-center justify-center gap-2 sm:gap-3 text-[14px] sm:text-[16px]`}
               >
                 <span>Apply Now</span>
@@ -273,9 +275,9 @@ export default function page() {
               ))}
 
               {/* Social Share */}
-              <div className="pt-4 sm:pt-6 border-t border-gray-200">
-                <p className="text-[#6F6F6F] font-bold mb-3 sm:mb-4 text-[12px] sm:text-[14px] md:text-[16px]">Share Job:</p>
-                <div className="flex gap-3 sm:gap-4 justify-start">
+              <div className=" flex items-center justify-between border-t border-gray-200 pt-8 px-4">
+                <p className="text-[#6F6F6F] font-bold   text-[12px] sm:text-[14px] md:text-[16px]">Share Job:</p>
+                <div className="flex gap-3 sm:gap-4 ">
                   <a
                     href="#"
                     className="rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors p-1"
@@ -542,9 +544,9 @@ export default function page() {
               ))}
 
               {/* Social Share */}
-              <div className="pt-4 sm:pt-6 border-t border-gray-200">
-                <p className="text-[#6F6F6F] font-bold mb-3 sm:mb-4 text-[12px] sm:text-[14px] md:text-[16px]">Share Job:</p>
-                <div className="flex gap-3 sm:gap-4 justify-start">
+              <div className=" flex items-center justify-between border-t border-gray-200 pt-8 px-4">
+                <p className="text-[#6F6F6F] font-bold   text-[12px] sm:text-[14px] md:text-[16px]">Share Job:</p>
+                <div className="flex gap-3 sm:gap-4 ">
                   <a
                     href="#"
                     className="rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors p-1"
@@ -588,6 +590,12 @@ export default function page() {
         secondaryButtonLink="/career"
         heroImage="/Images/careers-hero.png"
         heroImageAlt="Caregiver with patient"
+      />
+
+      <JobApplicationModal
+        isOpen={isModalOpen}
+        onOpenChange={setIsModalOpen}
+      // Pass the specific job title
       />
 
       <section className=" py-6 sm:py-8 md:py-10 bg-white mx-6 sm:mx-8 md:mx-10">

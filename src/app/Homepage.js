@@ -100,11 +100,11 @@ export default function Homepage() {
 
       <div className="bg-white">
 
-        <section className="container mx-auto mt-[20px]  ">
+        <section className="container mx-auto">
           <div className="container mx-auto px-4">
 
-            <div className="relative from-lightBlue to-backgroundGray h-52 rounded-[80px] -mb-10 sm:py-72 md:py-52 lg:py-40 xl:py-28 z-10">
-              <div className="absolute top-[300px] md:top-[300px] lg:top-[270px] xl:top-[260px] 2xl:top-[245px] left-1/2 transform -translate-x-1/2 w-full -mt-75  px-4">
+            <div className="relative from-lightBlue to-backgroundGray h-52 rounded-[80px]  sm:py-72 md:py-52 lg:py-40 xl:py-28 z-10">
+              <div className="absolute top-[300px] md:top-[300px] lg:top-[270px] xl:top-[260px] 2xl:top-[245px] left-1/2 transform -translate-x-1/2 w-full -mt-80  px-4">
                 <div className="flex flex-col md:grid md:grid-cols-2 md:gap-4 lg:flex lg:flex-row lg:justify-center lg:gap-0">
                   {featuredRoles.map((role, index) => {
                     const isFirstCard = index === 0;

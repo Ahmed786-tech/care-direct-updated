@@ -29,11 +29,10 @@ const HeroSection = ({
   return (
     <>
       <section
-        className={`relative flex flex-col justify-center h-[85vh] items-center`}
+        className={`relative flex flex-col justify-center h-[95vh]  md:h-[105vh] items-center overflow-hidden`}
       >
         {/* Background Image*/}
-
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img
             src={
               pathname === "/privacy"
@@ -41,16 +40,16 @@ const HeroSection = ({
                 : heroImage
             }
             alt="Hero Bg Image"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-top min-w-full min-h-full max-w-none"
           />
         </div>
 
-        <div className="container mx-auto grid md:grid-cols-2 gap-6 lg:gap-10 px-2 sm:px-6 py-6 items-center justify-center md:justify-start">
+        <div className="container mx-auto grid md:grid-cols-2 gap-6 lg:gap-10 px-2 sm:px-6 py-6 mt-16 justify-center md:justify-start relative z-10 h-full max-w-full overflow-hidden">
           {/* Left Text Section */}
           <div
             className={`${
               pathname !== "/privacy" ? "bg-[#ffffff]/[.85]" : ""
-            }  rounded-[20px] flex flex-col px-3 sm:px-4 md:px-5 lg:px-7 h-[fit-content] py-6 sm:py-7 md:py-8 lg:py-10 justify-center md:items-start relative w-[fit-content]`}
+            } rounded-[20px] flex flex-col px-3 sm:px-4 md:px-5 lg:px-7 h-[fit-content] py-6 sm:py-7 md:py-8 lg:py-10 justify-center md:items-start relative w-full max-w-full md:w-[fit-content] overflow-hidden`}
           >
             <Badge
               text={badgeText}

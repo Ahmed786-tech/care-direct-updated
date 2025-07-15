@@ -6,6 +6,7 @@ import { ReCAPTCHA } from "react-google-recaptcha";
 import { ArrowRight } from "lucide-react";
 
 export default function JobsForm({ isJobsPage }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [verified, setVerified] = useState(false);
 
   const handleRecaptchaChange = (value) => {
