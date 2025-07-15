@@ -88,8 +88,20 @@ export default function JobApplicationModal({
       <Dialog open={isOpen} onOpenChange={onOpenChange}>
         {children && <DialogTrigger asChild>{children}</DialogTrigger>}
 
-        <DialogContent className="sm:max-w-[800px] max-h-[95vh] p-0 overflow-auto">
-          <div className="relative bg-white rounded-lg">
+        <DialogContent className="sm:max-w-[800px] max-h-[95vh] p-0 overflow-hidden rounded-[20px] border-none">
+          <div
+            className="relative bg-white rounded-[20px] max-h-[95vh] overflow-y-auto scrollbar-hide"
+            style={{
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+            }}
+          >
+            <style jsx>{`
+              .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+              }
+            `}</style>
+
             <button
               onClick={() => onOpenChange(false)}
               className="absolute right-4 top-4 z-10 rounded-full bg-gray-100 p-2 hover:bg-gray-200 transition-colors"
@@ -120,8 +132,8 @@ export default function JobApplicationModal({
                     onChange={(e) =>
                       handleInputChange("fullName", e.target.value)
                     }
-                    placeholder="Area of Service"
-                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[8px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500`}
+                    placeholder="Full Name"
+                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[12px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500`}
                     required
                   />
                 </div>
@@ -139,8 +151,8 @@ export default function JobApplicationModal({
                     id="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
-                    placeholder="Area of Service"
-                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[8px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500`}
+                    placeholder="Email"
+                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[12px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500`}
                     required
                   />
                 </div>
@@ -159,10 +171,10 @@ export default function JobApplicationModal({
                     onChange={(e) =>
                       handleInputChange("jobTitle", e.target.value)
                     }
-                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[8px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white`}
+                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[12px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white`}
                     required
                   >
-                    <option value="">Area of Service</option>
+                    <option value="">Job Title</option>
                     <option value="Senior Carer">Senior Carer</option>
                     <option value="Care Assistant">Care Assistant</option>
                     <option value="Community Care Worker">
@@ -192,7 +204,7 @@ export default function JobApplicationModal({
                     />
                     <label
                       htmlFor="resume"
-                      className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[8px] cursor-pointer flex items-center gap-3 hover:border-blue-300 transition-colors`}
+                      className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[12px] cursor-pointer flex items-center gap-3 hover:border-blue-300 transition-colors`}
                     >
                       <Paperclip className="w-5 h-5 text-blue-500" />
                       {formData.resume
@@ -218,7 +230,7 @@ export default function JobApplicationModal({
                     }
                     placeholder="Type Your Message"
                     rows="4"
-                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[8px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-vertical`}
+                    className={`${poppins.className} w-full p-3 sm:p-4 border border-[#E5E5E5] text-[14px] sm:text-[15px] md:text-[16px] text-[#9D9797] rounded-[12px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-vertical`}
                   ></textarea>
                 </div>
 
@@ -234,9 +246,7 @@ export default function JobApplicationModal({
                 <button
                   type="submit"
                   // disabled={!verified}
-                  className={`w-full py-4 rounded-full transition duration-300 flex items-center justify-center ${poppins.className} text-white font-600 text-[16px] sm:text-[18px] bg-[#084B92] hover:bg-[#083B91] 
-                
-                `}
+                  className={`w-full py-4 rounded-full transition duration-300 flex items-center justify-center ${poppins.className} text-white font-600 text-[16px] sm:text-[18px] bg-[#084B92] hover:bg-[#083B91]`}
                 >
                   Submit Job Application
                   <span className="flex items-center justify-center bg-white rounded-full ml-3 w-6 h-6 p-1">
@@ -265,14 +275,14 @@ export default function JobApplicationModal({
             <h2
               className={`${andika.className} sm:text-[18px] md:text-[22px] font-bold text-[#4CAF50] mb-4`}
             >
-              Application for {formData.jobTitle || "Carer / Care Assistant"}{" "}
-              has been submitted successfully!
+              Application for Carer / Care Assistant has been submitted
+              successfully!
             </h2>
 
             <p
               className={`${andika.className} text-[14px] sm:text-[18px] text-[#B4B4B4] mb-8 font-normal leading-relaxed`}
             >
-              Thank you for your time and interest to apply here for the job.
+              Thank you for your time and interest to apply here for the job .
               Our Team will be analyzing your application and will get back to
               you soon.
             </p>

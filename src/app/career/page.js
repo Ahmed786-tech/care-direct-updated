@@ -633,9 +633,9 @@ export default function page() {
           },
         ]}
       />
-      <section className="container mx-auto flex flex-col items-center py-6 sm:py-8 md:py-10 lg:py-12 bg-white px-4 sm:px-6 lg:px-8">
+      <section className="container mx-auto flex flex-col items-center py-6 sm:pt-8 md:pt-10  bg-white px-4 sm:px-6 lg:px-8">
         {/* Heading and Icon Section on Top */}
-        <div className="flex flex-col items-start gap-3 sm:gap-4 mb-6 sm:mb-8 w-full">
+        <div className="flex flex-col items-start gap-3 sm:gap-4  w-full">
           <Badge
             text="Contact"
             textColor="#A8D5BA"
@@ -657,8 +657,8 @@ export default function page() {
         </div>
 
         {/* Form Section */}
-        <JobsForm isJobsPage={false} />
       </section>
+      <JobsForm isJobsPage={false} />
       <Footer />
     </div>
   );
