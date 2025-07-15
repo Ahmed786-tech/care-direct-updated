@@ -1,18 +1,61 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const SNOWFLAKE_COUNT = 10;
 const ICONS = ["/Icons/sun.svg", "/Icons/umbrella.svg"];
 
-function randomBetween(min: number, max: number) {
+function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-const FallingIcons: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+const FallingIcons = () => {
+  const containerRef = useRef(null);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const scrollTimeout = useRef(null);
+  const animationsRef = useRef([]);
 
   useEffect(() => {
-    const flakes: HTMLDivElement[] = [];
+    const handleScroll = () => {
+      // Set scrolling state to true immediately
+      setIsScrolling(true);
+
+      // Clear existing timeout
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+
+      // Set timeout to resume animation after scrolling stops
+      scrollTimeout.current = setTimeout(() => {
+        setIsScrolling(false);
+      }, 150); // Resume animation 150ms after scrolling stops
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+    };
+  }, []);
+
+  // Effect to pause/resume animations based on scroll state
+  useEffect(() => {
+    animationsRef.current.forEach((animation) => {
+      if (animation && animation.playState !== "finished") {
+        if (isScrolling) {
+          animation.pause();
+        } else {
+          animation.play();
+        }
+      }
+    });
+  }, [isScrolling]);
+
+  useEffect(() => {
+    const flakes = [];
+    const animations = [];
     const container = containerRef.current;
     if (!container) return;
 
@@ -37,7 +80,6 @@ const FallingIcons: React.FC = () => {
       const driftX = randomBetween(-40, 40); // px left/right
       const driftY = window.innerHeight + size + randomBetween(0, 100); // px down
       const swayAmplitude = randomBetween(10, 40); // px
-      const swayDuration = randomBetween(2000, 4000); // ms
       const fallDuration = randomBetween(7000, 12000); // ms
 
       // Combined keyframes for falling and swaying
@@ -70,20 +112,37 @@ const FallingIcons: React.FC = () => {
         },
       ];
 
-      // Animate with combined falling and swaying movement
-      flake.animate(combinedKeyframes, {
+      // Create animation
+      const animation = flake.animate(combinedKeyframes, {
         duration: fallDuration,
         delay: randomBetween(0, 4000),
         iterations: Infinity,
         easing: "ease-in-out",
       });
 
+      // Store animation reference
+      animations.push(animation);
+
       container.appendChild(flake);
       flakes.push(flake);
     }
 
+    // Store animations in ref for pause/resume control
+    animationsRef.current = animations;
+
     // Cleanup on unmount
-    return () => flakes.forEach((f) => f.remove());
+    return () => {
+      // Cancel all animations
+      animations.forEach((animation) => {
+        if (animation) {
+          animation.cancel();
+        }
+      });
+      // Remove DOM elements
+      flakes.forEach((f) => f.remove());
+      // Clear animations ref
+      animationsRef.current = [];
+    };
   }, []);
 
   return (

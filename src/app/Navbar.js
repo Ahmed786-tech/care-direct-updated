@@ -11,6 +11,13 @@ export default function Header() {
   const pathname = usePathname();
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  // Ensure component is mounted before rendering
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +29,24 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when pathname changes
+  useEffect(() => {
+    setMenuOpen(false);
+    setIsServicesOpen(false);
+  }, [pathname]);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.services-dropdown')) {
+        setIsServicesOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
@@ -31,10 +56,13 @@ export default function Header() {
 
   const isActive = (href) => pathname === href;
 
-  const servicePaths = ["/residential", "/staffing"];
+  const servicePaths = ["/assisted", "/residential", "/staffing"];
   const isServicesActive = servicePaths.includes(pathname);
 
-  const [menuOpen, setMenuOpen] = useState(false);
+  // Don't render until mounted to prevent hydration issues
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <header className="shadow-md z-50 bg-white">
@@ -105,24 +133,24 @@ export default function Header() {
 
       {/* Main Header */}
       <div className={`bg-white py-3 sm:py-5 lg:py-7 px-4 sm:px-7 z-20 ${isSticky ? 'fixed top-0 left-0 right-0 shadow-md transition-all duration-300' : ''}`}>
-
         <div className="container mx-auto flex justify-between items-center relative z-20">
-          <div className="flex items-center">
+          {/* Logo */}
+          <div className="flex items-center flex-shrink-0">
             <Link href="/" className="cursor-pointer">
               <Image
                 src="/Images/Logo.svg"
                 alt="Logo"
                 width={180}
                 height={36}
-                className="w-[180px] sm:w-[220px] lg:w-[282.33px]"
+                className="w-[140px] sm:w-[180px] md:w-[220px] lg:w-[282.33px]"
+                priority
               />
             </Link>
           </div>
 
           {/* Desktop/Tablet Nav */}
           <nav
-            className={`${poppins?.className || ""
-              } hidden md:flex gap-4 lg:gap-8 text-xs lg:text-sm text-[#979797] relative`}
+            className={`${poppins?.className || ""} hidden md:flex gap-4 lg:gap-8 text-xs lg:text-sm text-[#979797] relative`}
           >
             {/* Left links: Home and About Us */}
             {navLinks.slice(0, 2).map(({ href, label }) => (
@@ -139,7 +167,7 @@ export default function Header() {
             ))}
 
             {/* Dropdown in the middle */}
-            <div className="relative">
+            <div className="relative services-dropdown">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 className={`flex items-center font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap ${isServicesActive
@@ -203,13 +231,16 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-xl sm:text-2xl text-[#004990] cursor-pointer"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
-          </button>
+          {/* Mobile Menu Button - Ensure it's always visible on mobile */}
+          <div className="flex md:hidden items-center justify-center min-w-[40px]">
+            <button
+              className="text-xl sm:text-2xl text-[#004990] cursor-pointer p-1 flex items-center justify-center"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
+            </button>
+          </div>
         </div>
       </div>
 

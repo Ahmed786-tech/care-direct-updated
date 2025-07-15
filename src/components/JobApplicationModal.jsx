@@ -88,9 +88,9 @@ export default function JobApplicationModal({
       <Dialog open={isOpen} onOpenChange={onOpenChange}>
         {children && <DialogTrigger asChild>{children}</DialogTrigger>}
 
-        <DialogContent className="sm:max-w-[800px] max-h-[95vh] p-0 overflow-hidden rounded-[20px] border-none">
+        <DialogContent className="sm:max-w-[800px] max-h-[78vh] md:max-h-[95vh] p-0 overflow-hidden rounded-[20px] border-none">
           <div
-            className="relative bg-white rounded-[20px] max-h-[95vh] overflow-y-auto scrollbar-hide"
+            className="relative bg-white rounded-[20px] max-h-[78vh] md:max-h-[95vh] overflow-y-auto scrollbar-hide"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",

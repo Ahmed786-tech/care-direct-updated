@@ -409,6 +409,7 @@ export default function page() {
             </div>
             <div className="flex items-center justify-center xl:justify-end">
               <button
+                onClick={() => setIsModalOpen(true)}
                 className={`${heebo.className} h-[48px] sm:h-[56px] md:h-[63px] w-full sm:w-[250px] md:w-[280px] lg:w-[300px] bg-[#084B92] text-white px-6 sm:px-8 py-3 rounded-full cursor-pointer hover:bg-blue-800 transition-colors flex items-center justify-center gap-2 sm:gap-3 text-[14px] sm:text-[16px]`}
               >
                 <span>Apply Now</span>

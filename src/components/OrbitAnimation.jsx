@@ -2,15 +2,38 @@ import React, { useEffect, useRef, useState } from "react";
 
 const OrbitAnimation = () => {
   const [scrollAngle, setScrollAngle] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
   const containerRef = useRef(null);
+  const scrollTimeout = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
+      // Set scrolling state to true immediately
+      setIsScrolling(true);
+
+      // Clear existing timeout
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+
+      // Set timeout to resume animation after scrolling stops
+      scrollTimeout.current = setTimeout(() => {
+        setIsScrolling(false);
+      }, 150); // Resume animation 150ms after scrolling stops
+
+      // Update scroll angle for rotation effect
       const scrollY = (window.scrollY || window.pageYOffset) * 0.1;
       setScrollAngle(scrollY % 360);
     };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
+    };
   }, []);
 
   const orbitConfig = [
@@ -78,6 +101,7 @@ const OrbitAnimation = () => {
           className="w-full h-full object-contain rounded-full"
         />
       </div>
+
       {/* Orbit Rings */}
       {orbitConfig.map((orbit, idx) => (
         <div
@@ -92,6 +116,7 @@ const OrbitAnimation = () => {
           }}
         />
       ))}
+
       {/* Orbiting Icons */}
       {orbitConfig.map((orbit, orbitIdx) => (
         <div
@@ -99,6 +124,9 @@ const OrbitAnimation = () => {
           className="absolute top-0 left-0 w-full h-full pointer-events-none"
           style={{
             transform: `rotate(${scrollAngle}deg)`,
+            // Pause animation when scrolling
+            animationPlayState: isScrolling ? "paused" : "running",
+            transition: isScrolling ? "none" : "transform 0.3s ease-out",
           }}
         >
           {orbit.icons.map((icon, iconIdx) => (
@@ -108,8 +136,14 @@ const OrbitAnimation = () => {
               style={{
                 width: icon.size?.width || 32,
                 height: icon.size?.height || 32,
-                transform: `\n                  rotate(${icon.angle}deg) \n                  translateY(-${orbit.radius}px)\n                  translate(${icon.position.x}px, ${icon.position.y}px)\n                `,
+                transform: `
+                  rotate(${icon.angle}deg) 
+                  translateY(-${orbit.radius}px)
+                  translate(${icon.position.x}px, ${icon.position.y}px)
+                `,
                 transformOrigin: `0 -${orbit.radius}px`,
+                // Pause individual icon animations when scrolling
+                animationPlayState: isScrolling ? "paused" : "running",
               }}
             >
               <img
@@ -118,6 +152,8 @@ const OrbitAnimation = () => {
                 style={{
                   width: "100%",
                   height: "100%",
+                  // Pause image animations when scrolling
+                  animationPlayState: isScrolling ? "paused" : "running",
                 }}
               />
             </div>
