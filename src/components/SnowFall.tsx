@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 
 const SNOWFLAKE_COUNT = 10;
-const ICONS = ["/Icons/sun.svg", "/Icons/coconuts.svg"];
+const ICONS = ["/Icons/sun.svg", "/Icons/umbrella.svg"];
 
 function randomBetween(min: number, max: number) {
   return Math.random() * (max - min) + min;
