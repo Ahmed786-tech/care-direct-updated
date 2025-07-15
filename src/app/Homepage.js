@@ -40,11 +40,11 @@ export default function Homepage() {
       title: " Roles",
       description:
         "Seeking a career where your work matters? Care Direct is the place to grow.",
-      link: "View Job",
+      link: "",
     },
     { title: "Registered Nurses", link: "View Job" },
-    { title: "Care Workers", link: "Careers" },
-    { title: "Download Brochure", link: "Careers" },
+    { title: "Care Workers", link: "View Job" },
+    { title: "Download Brochure", link: "Download Now" },
   ];
 
   const cardData = [
@@ -173,7 +173,7 @@ export default function Homepage() {
                               href="#careerjob"
                               className={`${heebo.className} flex flex-row items-center gap-2 justify-center text-white text-sm font-medium border-1 border-white px-4 py-2 rounded-full`}
                             >
-                              <span>View Job</span>
+                              <span>{role.link}</span>
                               <ArrowRight className="text-white w-[16px] h-[16px] sm:w-[18px] sm:h-[18px] md:w-[19px] md:h-[19px] lg:w-[20px] lg:h-[20px] font-bold" />
                             </a>
                           )}

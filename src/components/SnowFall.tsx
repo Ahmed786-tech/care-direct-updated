@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
-const SNOWFLAKE_COUNT = 20;
+const SNOWFLAKE_COUNT = 10;
 const ICONS = ["/Icons/sun.svg", "/Icons/coconuts.svg"];
 
 function randomBetween(min: number, max: number) {
