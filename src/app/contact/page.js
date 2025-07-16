@@ -246,13 +246,17 @@ export default function page() {
         </div>
       </section>
       <section className="container mx-auto w-full bg-white mb-30 sm:mb-30 md:mb-40 px-4 sm:px-6 lg:px-8 pb-12 md:pb-20">
-        <Image
-          src="/Images/map.png"
-          alt="Map"
-          width={1600}
-          height={900}
-          className="rounded-md object-cover w-full"
-        />
+        <iframe
+          src="https://www.google.com/maps?q=31.601585,74.334431&z=15&output=embed"
+          width="100%"
+          height="550"
+          style={{ border: 0, borderRadius: 20 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Custom Location Map">
+        </iframe>
+
       </section>
       <Footer />
     </div>
