@@ -297,7 +297,7 @@ export default function Homepage() {
                   As a care provider recruitment agency, our success comes from
                   the heartfelt connections we build with our incredible members
                   of staff. If you’re thinking about joining our family, here
-                  are seven wonderful reasons to Join us.
+                  are seven wonderful reasons.
                 </p>
                 <div className="mt-8 sm:mt-10 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
                   {[
@@ -459,7 +459,7 @@ export default function Homepage() {
                     // profile: "/Images/Profile-img1.png",
                     // author: "Joanna Wellick",
                     // date: "June 28, 2018",
-                    tags: ["Aenean Eleifend", "Aliquam"],
+                    // tags: ["Aenean Eleifend", "Aliquam"],
                   },
                   {
                     image: "/Images/Card-img6.png",
@@ -469,7 +469,7 @@ export default function Homepage() {
                     // profile: "/Images/Profile-img1.png",
                     // author: "Joanna Wellick",
                     // date: "June 28, 2018",
-                    tags: ["Aenean Eleifend"],
+                    // tags: ["Aenean Eleifend"],
                   },
                   {
                     image: "/Images/image.png",
@@ -479,7 +479,7 @@ export default function Homepage() {
                     // profile: "/Images/Profile-img1.png",
                     // author: "Joanna Wellick",
                     // date: "June 28, 2018",
-                    tags: ["Aenean Eleifend", "Aliquam"],
+                    // tags: ["Aenean Eleifend", "Aliquam"],
                   },
                 ].map((blog, index) => (
                   <div
@@ -492,7 +492,7 @@ export default function Homepage() {
                         alt={blog.title}
                         className="w-full h-48 sm:h-56 md:h-72 object-cover border-[2px] border-white rounded-[20px] p-2 sm:p-3"
                       />
-                      <div className="absolute top-3 sm:top-5 left-3 sm:left-5 flex flex-wrap gap-2">
+                      {/* <div className="absolute top-3 sm:top-5 left-3 sm:left-5 flex flex-wrap gap-2">
                         {blog.tags.map((tag, i) => (
                           <span
                             key={i}
@@ -504,7 +504,7 @@ export default function Homepage() {
                             {tag}
                           </span>
                         ))}
-                      </div>
+                      </div> */}
                     </div>
                     <div className="p-4 sm:p-5 md:p-6">
                       <h3

@@ -106,16 +106,9 @@ const OurServices = () => {
     {
       title: "Staffing Solutions",
       description:
-        "Staffing SolutionsFlexible, fast-response recruitment across South East & East of England. Built for healthcare realities.",
+        "Flexible, fast-response recruitment across South and East of England. Built for healthcare realities.",
       image: "/Images/Card-img3.png",
       link: "/staffing",
-    },
-    {
-      title: "Nurse & Care Worker Recruitment",
-      description:
-        "From RGN and RMNs to senior carers, we provide fully qualified, ethically recruited professionals for roles in both community and residential settings.",
-      image: "/Images/service4.png",
-      link: "#",
     },
   ];
 

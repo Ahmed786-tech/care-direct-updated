@@ -140,7 +140,7 @@ export default function page() {
         badgeIcon="/Images/Care-solution.svg"
         NavyBlueHeading="Staffing"
         subHeading="Solutions"
-        description="Bridging the gaps with qualitative workforce."
+        description="Bridging the gaps with qualitative workforce and regulated by the Care Quality Commission."
         primaryButtonText="Find a Caregiver"
         primaryButtonLink="/career"
         secondaryButtonText="Staff Your Facility"
