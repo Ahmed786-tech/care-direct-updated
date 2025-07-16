@@ -589,7 +589,7 @@ export default function page() {
         primaryButtonLink="/career"
         secondaryButtonText="Send Us Your CV"
         secondaryButtonLink="/career"
-        heroImage="/Images/careers-hero.png"
+        heroImage="/Images/career-section-hero-img.png"
         heroImageAlt="Caregiver with patient"
       />
 

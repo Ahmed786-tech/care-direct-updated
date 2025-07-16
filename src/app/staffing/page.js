@@ -61,7 +61,8 @@ export default function page() {
     {
       title: "Availability",
       description: "24/7 availability for urgent staffing requests",
-      image: "/Images/Card-img14.png",
+      image: "/Images/emotional-support-img.png",
+
     },
   ];
   const faqs = [

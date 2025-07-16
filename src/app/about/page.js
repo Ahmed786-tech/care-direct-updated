@@ -1,4 +1,6 @@
 "use client";
+import { useState, useRef, useEffect } from "react";
+
 import { ibmPlexSans, poppins, heebo } from "@/app/font";
 import Link from "next/link";
 import Badge from "@/components/Badge";
@@ -11,9 +13,23 @@ import OurTeam from "@/components/OurTeam";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import PrimaryButton from "@/components/PrimaryButton";
+// import OrbitAnimation from "@/components/OrbitAnimation";
+
 import { color } from "framer-motion";
 
 export default function about() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 768);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const cardData = [
     {
       id: 1,
@@ -41,7 +57,25 @@ export default function about() {
     },
   ];
   return (
+
     <div className="bg-white w-full">
+      {/* <div className="w-full lg:w-1/2 h-[1140px] flex justify-center items-center">
+        <div className="flex items-center justify-center w-full h-full">
+          {isMobile ? (
+            <div className="w-full h-full">
+              <img
+                src="/Images/staticOrbitImage.png"
+                alt="Homepage Image"
+                className="w-full h-[300px] object-contain"
+              />
+            </div>
+          ) : (
+            <div>
+              <OrbitAnimation />
+            </div>
+          )}
+        </div>
+      </div> */}
       <Navbar />
       <HeroSection
         badgeText="Trusted Care Solutions Since 2013"
@@ -111,6 +145,7 @@ export default function about() {
           />
         </div>
       </div>
+
       <section className=" bg-white flex flex-col justify-start px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
           {/* Left Text Section */}

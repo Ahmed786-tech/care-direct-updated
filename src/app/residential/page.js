@@ -60,7 +60,8 @@ export default function page() {
     {
       title: "Personal",
       description: "Personal hygiene and nutritional support",
-      image: "/Images/Card-img14.png",
+      image: "/Images/emotional-support-img.png",
+
     },
 
   ];

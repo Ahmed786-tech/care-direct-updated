@@ -28,7 +28,7 @@ export default function page() {
     "Weekly pay at competitive rates",
     "Free accredited training, including NHS-aligned CPD",
     "Rotas planned weekly",
-    "Help with travel or relocation (where applicable)",
+    "Help with travel (where applicable)",
     "Professional supervision and ongoing guidance",
     "Career progression routes to senior roles",
     "Be part of a respected, NHS-compliant agency",
@@ -461,7 +461,7 @@ export default function page() {
         primaryButtonLink="/career"
         secondaryButtonText="Send Us Your CV"
         secondaryButtonLink="/career"
-        heroImage="/Images/careers-hero.png"
+        heroImage="/Images/career-section-hero-img.png"
         heroImageAlt="Caregiver with patient"
       />
 

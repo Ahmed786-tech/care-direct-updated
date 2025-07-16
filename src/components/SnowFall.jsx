@@ -168,7 +168,7 @@ const FallingIcons = () => {
       // Clear references
       animationsRef.current = [];
       activeFlakes.current = [];
-    }, 15000); // Hide after 15 seconds
+    }, 25000); // Hide after 25 seconds
 
     // Cleanup on unmount
     return () => {

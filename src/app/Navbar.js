@@ -196,7 +196,7 @@ export default function Header() {
                 alt="Logo"
                 width={180}
                 height={36}
-                className="w-[140px] sm:w-[180px] md:w-[220px] lg:w-[282.33px]"
+                className="w-[140px] sm:w-[180px] md:w-[220px] "
                 priority
               />
             </Link>

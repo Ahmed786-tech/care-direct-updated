@@ -59,7 +59,7 @@ export default function page() {
     {
       title: "Emotional Support",
       description: "Companionship and emotional support",
-      image: "/Images/Card-img14.png",
+      image: "/Images/emotional-support-img.png",
     },
 
   ];

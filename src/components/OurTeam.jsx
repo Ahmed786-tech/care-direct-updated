@@ -42,7 +42,7 @@ const OurTeam = () => {
       role: "Training Manager",
       description:
         "With over 40 years in health and social care, Ann brings extensive experience as a qualified adult education tutor and registered manager. She has contributed to key industry publications and holds postgraduate qualifications in education. Ann is passionate about training the next generation of care workers to ensure the highest standards of care delivery.",
-      image: "/Images/Team/TrainerAnnHolland.png",
+      image: "/Images/Team/TrainerAnnHolland.jpg",
       email: "example@example.com",
       phone: "+40 72 322 76 70",
       linkedin: "#",
@@ -53,7 +53,7 @@ const OurTeam = () => {
     <div className="relative bg-[#084B9205] py-8 mt-16 sm:py-10 md:py-12 poppins mb-20 sm:mb-24 md:mb-48">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Badge
-        text="Team"
+          text="Team"
           textColor="#A8D5BA"
           badgeColor="#A8D5BA26"
           iconSrc="/Icons/team.svg"
@@ -92,7 +92,7 @@ const OurTeam = () => {
                   src={item.image || "/placeholder.svg"}
                   alt={item.name}
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                 />
               </div>
