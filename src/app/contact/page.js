@@ -247,7 +247,7 @@ export default function page() {
       </section>
       <section className="container mx-auto w-full bg-white mb-30 sm:mb-30 md:mb-40 px-4 sm:px-6 lg:px-8 pb-12 md:pb-20">
         <iframe
-          src="https://www.google.com/maps?q=31.601585,74.334431&z=15&output=embed"
+          src="https://www.google.com/maps?q=389a+London+Rd,+St.+Leonards-on-Sea+TN37+6PA,+UK&z=15&output=embed"
           width="100%"
           height="550"
           style={{ border: 0, borderRadius: 20 }}
